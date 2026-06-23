@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import BannerSection from '@/components/home/BannerSection.vue'
-import ProveedoresTelefoniaIP from '@/components/home/ProveedoresTelefoniaIP.vue'
-import ServiciosEscalables from '@/components/home/ServiciosEscalables.vue'
-import SolucionesTelefonia from '@/components/home/SolucionesTelefonia.vue'
-import GeneraGanancias from '@/components/home/GeneraGanancias.vue'
+import BannerComponent from '@/components/home/01-Banner.vue'
 
 import { useHead } from '@vueuse/head'
 
@@ -20,11 +16,8 @@ useHead({
 </script>
 
 <template>
-  <BannerSection />
-  <ProveedoresTelefoniaIP />
-  <SolucionesTelefonia />
-  <ServiciosEscalables />
-  <GeneraGanancias />
+  <BannerComponent />
+
 </template>
 
 <style scoped></style>
