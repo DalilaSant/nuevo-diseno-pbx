@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import BannerComponent from '@/components/home/01-Banner.vue'
+import BannerComponent2 from '@/components/home/02-Banner.vue'
+import Section3 from '@/components/home/03-Section.vue'
 
 import { useHead } from '@vueuse/head'
 
@@ -17,7 +19,8 @@ useHead({
 
 <template>
   <BannerComponent />
-
+  <BannerComponent2 />
+  <Section3 />
 </template>
 
 <style scoped></style>
