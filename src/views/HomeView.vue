@@ -2,8 +2,12 @@
 import BannerComponent from '@/components/home/01-Banner.vue'
 import BannerComponent2 from '@/components/home/02-Banner.vue'
 import Section3 from '@/components/home/03-Section.vue'
-
+import Banner4 from '@/components/home/04-Banner.vue'
+import Section5 from '@/components/home/05-Section.vue'
+import Section6 from '@/components/home/06-Section.vue'
+import Banner7 from '@/components/home/07-Banner.vue'
 import { useHead } from '@vueuse/head'
+
 
 useHead({
   title: 'PbxHosting | Proveedores de Telefonía IP en México',
@@ -21,6 +25,10 @@ useHead({
   <BannerComponent />
   <BannerComponent2 />
   <Section3 />
+  <Banner4 />
+  <Section5 />
+  <Section6 />
+  <Banner7 />
 </template>
 
 <style scoped></style>

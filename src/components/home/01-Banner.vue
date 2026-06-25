@@ -13,7 +13,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
             Conecta, automatiza <br>
             <span class="text-red">y escala</span> tu empresa.
           </SectionTitleTwo>
-          <p class="mb-4 fs-5 mx-md-auto " style="max-width: 600px; ">
+          <p class="mb-4 fs-5 mx-md-auto mx-lg-0" style="max-width: 600px; ">
             Proveedores de <span class="fw-bold">Telefonía IP</span> y soluciones en <strong class="fw-bold">Telecomunicaciones</strong> para crecer sin límites.
           </p>
           

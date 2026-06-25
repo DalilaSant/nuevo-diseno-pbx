@@ -27,7 +27,7 @@ const scrollRight = () => {
   <section class="banner-section py-5 position-relative overflow-hidden" style="background-color: #ffffff;">
     <div class="container py-lg-4">
       <div class="text-center pt-lg-4 mb-5">
-        <h4 class="text-uppercase fw-bold text-muted small mb-2" style="letter-spacing: 2px; font-size: 0.85rem;">Nosotros ofrecemos</h4>
+        <h4 class="text-uppercase fw-bold mb-2" >Nosotros ofrecemos</h4>
         <SectionTitleTwoCenter>
           <span class="text-red">Soluciones integrales</span> para tu comunicación
         </SectionTitleTwoCenter>
@@ -52,11 +52,9 @@ const scrollRight = () => {
             class="carousel-card-item flex-shrink-0"
           >
             <div class="card h-100 p-4 border rounded-4 shadow-sm bg-white text-start transition-scale">
-              <!-- Icono de la solución -->
+
               <div class="icon-wrapper mb-3 d-flex align-items-center justify-content-center rounded-3" style="width: 54px; height: 54px; background-color: #f2f5f7;">
-                <!-- PENDIENTE: Agrega la ruta de la imagen aquí en src -->
                 <img 
-                  v-if="carrusel.icono"
                   :src="carrusel.icono" 
                   :alt="carrusel.titulo" 
                   class="img-fluid" 
@@ -64,15 +62,12 @@ const scrollRight = () => {
                 />
               </div>
 
-              <!-- Título -->
               <h3 class="h5 fw-bold text-dark mb-2">{{ carrusel.titulo }}</h3>
 
-              <!-- Descripción -->
-              <p class="small text-muted mb-4 flex-grow-1">
+              <p class="small mb-4 flex-grow-1">
                 <strong>{{ carrusel.descNegrita }}</strong>{{ carrusel.descNormal }}
               </p>
 
-              <!-- Enlace -->
               <router-link :to="carrusel.link" class="text-red fw-bold text-decoration-none d-inline-flex align-items-center gap-1 small-btn">
                 Ver solución
                 <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
