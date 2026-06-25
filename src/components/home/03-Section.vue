@@ -26,7 +26,10 @@ const scrollRight = () => {
 <template>
   <section class="banner-section py-5 position-relative overflow-hidden" style="background-color: #ffffff;">
     <div class="container py-lg-4">
-      <div class="text-center pt-lg-4 mb-5">
+      <div class="text-center pt-lg-4 mb-5"
+        v-motion-fade-visible
+            :delay="200" 
+            :duration="1000">
         <h4 class="text-uppercase fw-bold mb-2" >Nosotros ofrecemos</h4>
         <SectionTitleTwoCenter>
           <span class="text-red">Soluciones integrales</span> para tu comunicación
