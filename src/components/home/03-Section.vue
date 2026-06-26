@@ -30,7 +30,7 @@ const scrollRight = () => {
         v-motion-fade-visible
             :delay="200" 
             :duration="1000">
-        <h4 class="text-uppercase fw-bold mb-2" >Nosotros ofrecemos</h4>
+        <h4 class="text-uppercase fw-semiold mb-2" >Nosotros ofrecemos</h4>
         <SectionTitleTwoCenter>
           <span class="text-red">Soluciones integrales</span> para tu comunicación
         </SectionTitleTwoCenter>
@@ -65,10 +65,10 @@ const scrollRight = () => {
                 />
               </div>
 
-              <h3 class="h5 fw-bold text-dark mb-2">{{ carrusel.titulo }}</h3>
+              <h3 class="h5 fw-semibold text-dark mb-2">{{ carrusel.titulo }}</h3>
 
-              <p class="small mb-4 flex-grow-1">
-                <strong>{{ carrusel.descNegrita }}</strong>{{ carrusel.descNormal }}
+              <p class=" mb-4 flex-grow-1">
+                <span class="fw-semibold">{{ carrusel.descNegrita }}</span>{{ carrusel.descNormal }}
               </p>
 
               <router-link :to="carrusel.link" class="text-red fw-bold text-decoration-none d-inline-flex align-items-center gap-1 small-btn">

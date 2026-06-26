@@ -15,7 +15,7 @@ import BaseButton from '../common/BaseButton.vue'
 
             <!-- Lado izquierdo: Textos -->
             <div class="col-12 col-lg-7 text-start ">
-              <SectionTitleTwo textColor="text-white">
+              <SectionTitleTwo textColor="text-white" displayFont="display-6">
                 ¿Listo para llevar tu empresa
                 <span class="text-red">al siguiente nivel?</span>
               </SectionTitleTwo>

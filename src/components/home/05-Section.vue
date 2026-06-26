@@ -13,7 +13,7 @@ import { homeData } from '@/data/home';
       v-motion-fade-visible
             :delay="200" 
             :duration="1000">
-        <h4 class="text-uppercase fw-bold mb-2">PRINCIPALES BENEFICIOS</h4>
+        <h4 class="text-uppercase fw-semibold mb-2">PRINCIPALES BENEFICIOS</h4>
         <SectionTitleTwoCenter>
           <span class="text-red">Más rendimiento,</span> menos complicaciones
         </SectionTitleTwoCenter>

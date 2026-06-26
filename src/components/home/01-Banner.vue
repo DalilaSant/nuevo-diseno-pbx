@@ -18,8 +18,8 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
             <span class="text-red">y escala</span> tu empresa.
           </SectionTitleTwo>
           <p class="mb-4 fs-5 mx-md-auto mx-lg-0" style="max-width: 600px; ">
-            Proveedores de <span class="fw-bold">Telefonía IP</span> y soluciones en <strong
-              class="fw-bold">Telecomunicaciones</strong> para crecer sin límites.
+            Proveedores de <span class="fw-semibold">Telefonía IP</span> y soluciones en <strong
+              class="fw-semibold">Telecomunicaciones</strong> para crecer sin límites.
           </p>
 
           <div class="d-flex justify-content-center justify-content-lg-start">
@@ -32,13 +32,13 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
             :delay="200" 
             :duration="1200">
           <div class="banner-image-container p-2">
-            <img src="/img/home/IMAGEN_1_SECCION_1.png" alt="PBX Hosting Soluciones" class="img-fluid mx-auto d-block"
+            <img src="/img/home/IMAGEN_1_SECCION_1.png" alt="PBX Hosting Soluciones" class="img-fluid mx-auto d-block banner-img"
               style="max-height: 400px; width: auto; object-fit: contain;" />
           </div>
         </div>
       </div>
 
-      <div class="d-flex flex-column flex-md-row gap-4 gap-lg-5 justify-content-center justify-content-lg-start pt-0"
+      <div class="d-flex flex-column flex-md-row gap-4 gap-lg-4 justify-content-center justify-content-lg-start pt-0 features-container"
         v-motion-slide-left
             :delay="200" 
             :duration="1200">
@@ -52,4 +52,29 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+@media (min-width: 1024px) {
+  .banner-img {
+    transform: scale(1.1);
+    transform-origin: center;
+  }
+}
+
+@media (min-width: 1022px) and (max-width: 1279px) {
+  .features-container {
+    width: 70% !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .features-container {
+    width: 60% !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .features-container {
+    width: 54% !important;
+  }
+}
+</style>

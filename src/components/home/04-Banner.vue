@@ -26,7 +26,7 @@
                             class="text-uppercase fw-semibold tracking-wider text-light-gray fs-5 mb-0 d-inline-block">
                             Por qué elegirlos
                         </span>
-                        <h2 class="display-6 fw-bold mb-3 banner-title">
+                        <h2 class="display-6 fw-semibold mb-3 banner-title">
                             Tu éxito es nuestra <br class="d-none d-md-block" />
                             <span class="text-danger">mejor conexión.</span>
                         </h2>
@@ -58,7 +58,7 @@
 
 /* Ajustes de tipografía */
 .text-light-gray {
-    color: #cbd5e1;
+    color: #ffffff;
     letter-spacing: 0.08em;
 }
 

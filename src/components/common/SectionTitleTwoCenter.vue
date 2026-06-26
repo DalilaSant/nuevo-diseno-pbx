@@ -1,7 +1,7 @@
 <template>
   <div class="text-center text-lg-center mb-4">   
     <!-- Título -->
-    <h2 class="display-5 fw-bold text-dark mb-3 lh-sm" style="letter-spacing: -1px;">
+    <h2 class="display-5 fw-semibold text-dark mb-3 lh-sm" style="letter-spacing: -1px;">
       <slot></slot>
     </h2>
   </div>

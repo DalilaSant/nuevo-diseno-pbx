@@ -4,7 +4,7 @@
     <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
     
     <!-- Título -->
-    <h2 class="display-4 fw-bold text-dark mb-3 lh-sm" style="letter-spacing: -1px;">
+    <h2 class="display-4 fw-semibold text-dark mb-3 lh-sm" style="letter-spacing: -1px;">
       <slot></slot>
     </h2>
   </div>

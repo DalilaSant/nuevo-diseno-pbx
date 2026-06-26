@@ -3,6 +3,10 @@ defineProps({
   textColor: {
     type: String,
     default: 'text-dark'
+  },
+  displayFont: {
+    type: String,
+    default: 'display-4'
   }
 })
 </script>
@@ -13,7 +17,7 @@ defineProps({
     <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
     
     <!-- Título -->
-    <h2 :class="[textColor, 'display-5 fw-bold mb-3 lh-sm']" style="letter-spacing: -1px;">
+    <h2 :class="[textColor, displayFont, 'fw-semibold mb-3 lh-sm']" style="letter-spacing: -1px;">
       <slot></slot>
     </h2>
   </div>
@@ -25,5 +29,11 @@ defineProps({
   height: 4px;
   background-color: #f12537;
   border-radius: 2px;
+}
+
+@media (min-width: 1022px) and (max-width: 1366px) {
+  h2 {
+    font-size: calc(1.375rem + 1.5vw) !important; /* Equivalente al tamaño responsive de display-5 en Bootstrap 5 */
+  }
 }
 </style>

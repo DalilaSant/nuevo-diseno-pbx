@@ -40,7 +40,7 @@ import { homeData } from '@/data/home';
   background-position: top left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .sector-card:hover {
