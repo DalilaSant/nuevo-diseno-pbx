@@ -22,7 +22,7 @@ import BaseButton from '../common/BaseButton.vue';
             <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
             
             <!-- Título Principal -->
-            <h2 class="featured-title fw-bold mb-3 mb-lg-1 lh-sm text-dark">
+            <h2 class="featured-title fw-semibold mb-3 mb-lg-1 lh-sm text-dark">
               Telefonía IP <br>
               <span class="text-red">eficiente y rentable.</span>
             </h2>

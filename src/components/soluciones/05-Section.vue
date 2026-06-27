@@ -6,14 +6,14 @@ import { solucionesData } from '@/data/soluciones';
 </script>
 
 <template>
-  <div class="container py-5">
+  <div class="container py-5 mt-3">
     <!-- Grid de Tarjetas de Sectores -->
     <div class="row g-4 justify-content-center">
       
       <div 
-        v-for="(cards, index) in solucionesData.cards" 
+        v-for="(cards, index) in solucionesData.cardsDos" 
         :key="index" 
-        class="col-12 col-md-6 col-lg-3"
+        class="col-12 col-md-6 col-lg-4"
       >
         <!-- Tarjeta de Sector -->
         <div class="sector-card position-relative rounded-4 overflow-hidden shadow-sm" :style="{ backgroundImage: `url(${cards.bgClass})` }">
@@ -30,7 +30,7 @@ import { solucionesData } from '@/data/soluciones';
       </div>
 
     </div>
-  </div>
+</div>
 </template>
 
 <style scoped>
