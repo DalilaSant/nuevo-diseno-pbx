@@ -4,6 +4,7 @@ defineProps<{
   enlace: string        // "#" o "https://
   esExterno?: boolean   // Por si es un enlace externo a WhatsApp
   mostrarIcono?: boolean //flechita '>'
+  roundedClass?: string // Clase de redondeado personalizada (ej. rounded-1, rounded-0)
 }>()
 </script>
 
@@ -11,7 +12,7 @@ defineProps<{
   <a 
     :href="enlace" 
     :target="esExterno ? '_blank' : '_self'"
-    class="btn btn-red btn-lg rounded-3 px-4 py-2 fs-6 fw-semibold text-white shadow-sm d-inline-flex align-items-center gap-2 transition-all"
+    :class="['btn btn-red btn-lg px-4 py-2 fs-6  text-white shadow-sm d-inline-flex align-items-center gap-2 transition-all', roundedClass || 'rounded-3']"
   >
     {{ texto }}
     <!-- Renderiza el icono solo si 'mostrarIcono' es verdadero -->

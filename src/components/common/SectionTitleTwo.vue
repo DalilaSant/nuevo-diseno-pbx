@@ -7,12 +7,16 @@ defineProps({
   displayFont: {
     type: String,
     default: 'display-4'
+  },
+  textPosition:{
+    type: String,
+    default: 'text-center text-lg-start'
   }
 })
 </script>
 
 <template>
-  <div class="text-center text-lg-start mb-4">
+  <div :class="[textPosition, 'mb-4']">
     <!-- Línea decorativa roja -->
     <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
     
