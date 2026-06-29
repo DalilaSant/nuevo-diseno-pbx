@@ -63,7 +63,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
                   </div>
                   
                   <!-- Botón abajo a la izquierda -->
-                  <div class="text-start">
+                  <div class="text-start boton-cellphone">
                     <BaseButton class="ms-3" texto="Me interesa" enlace="#" :mostrarIcono="true" roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
@@ -96,7 +96,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
                   </div>
                   
                   <!-- Botón abajo a la izquierda -->
-                  <div class="text-start">
+                  <div class="text-start boton-cellphone">
                     <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true" roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
@@ -129,7 +129,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
                   </div>
                   
                   <!-- Botón abajo a la izquierda -->
-                  <div class="text-start">
+                  <div class="text-start boton-cellphone">
                     <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true" roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
@@ -161,7 +161,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, rgba(12, 24, 36, 0.95) 0%, rgba(12, 24, 36, 0.75) 50%, rgba(12, 24, 36, 0.4) 100%);
+  /* background: linear-gradient(90deg, rgba(12, 24, 36, 0.95) 0%, rgba(12, 24, 36, 0.75) 50%, rgba(12, 24, 36, 0.4) 100%); */
   z-index: 1;
 }
 
@@ -259,6 +259,8 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
     padding: 2.5rem 1rem !important;
   }
   
+
+
   .solutions-banner::before {
     /* En vertical, el gradiente oscuro cubre toda la tarjeta uniformemente */
     background: rgba(12, 24, 36, 0.9);
@@ -335,6 +337,23 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
     white-space: nowrap !important; 
     font-size: 0.90rem !important;
     padding: 6px 10px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .boton-cellphone {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  .boton-cellphone :deep(.btn) {
+    width: 100% !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .boton-cellphone :deep(.ms-3) {
+    margin-left: 0 !important;
   }
 }
 </style>

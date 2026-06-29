@@ -66,4 +66,41 @@ export const solucionesData: SolucionesData = {
       features: ['150 Llamadas Recurrentes', '16-32GB de Ram', '192GB SSD', '8TB Transferencia'],
     },
   ],
+
+  //Banner09
+  preciosCobranza:[
+    {
+      title:'Paquete',
+      titletwo:'Cobranza',
+      price:'$3,500',
+    }
+  ],
+
+  //Banner12
+  preciosDialler:[
+    {
+      title:'PBX',
+      tittletwo:'Dialer 30',
+      price:'$1,320',
+      description: 'Costo de instalación ',
+      textred:'$660 MXN + IVA',
+      features:['Sistema dialer avanzado', '30 llamadas en simultáneo', 'Soporta hasta 30 agentes', 'Hasta 80 blaster por minuto', 'Grabación de llamadas'],
+    },
+    {
+      title:'PBX',
+      tittletwo:'DIALER 60',
+      price:'$2,640 ',
+      description:'Costo de instalación ',
+      textred:'$1,320 MXN + IVA',
+      features:['Sistema dialer avanzado', '60 llamadas en simultáneo','Soporta hasta 60 agentes','Hasta 150 blaster por minuto','Grabación de llamadas'],
+    },
+    {
+      title:'PBX',
+      tittletwo:'DIALER 150',
+      price:'$6,660',
+      description:'Costo de instalación',
+      textred:'$3,330 MXN + IVA',
+      features:['Sistema dialer avanzado', '150 llamadas en simultáneo','Soporta hasta 150 agentes','Hasta 300 blaster por minuto','Grabación de llamadas']
+    }
+  ]
 }

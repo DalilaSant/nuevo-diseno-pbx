@@ -3,7 +3,7 @@ import BaseButton from '../common/BaseButton.vue';
 </script>
 
 <template>
-  <section class="solutions-features-section pt-5 pb-4">
+  <section class="solutions-features-section py-5">
     <div class="container py-lg-3">
       <!-- Fila principal: Se invierte en móvil para que la imagen quede arriba si es necesario, o se mantiene -->
       <div class="row align-items-center g-4 g-lg-5">
@@ -46,8 +46,8 @@ import BaseButton from '../common/BaseButton.vue';
             </div>
 
             <!-- Botón de Acción -->
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <BaseButton texto="Cotizar" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
+            <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
+              <BaseButton  texto="Cotizar" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
             </div>
           </div>
         </div>
@@ -168,7 +168,9 @@ import BaseButton from '../common/BaseButton.vue';
 
   .solutions-featured-img {
     max-height: 300px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
   }
+
+   
 }
 </style>

@@ -4,34 +4,35 @@ import { solucionesData } from '@/data/soluciones'
 </script>
 
 <template>
-    <section class="switch-pricing-section py-5 my-lg-4">
-        <div class="container py-lg-4">
+    <section class="switch-pricing-section py-3 py-lg-5 my-lg-0">
+        <div class="container py-lg-0">
 
             <!-- Título de la Sección -->
             <h2 class="section-title text-center fw-semibold mb-5 text-dark">
-                Precios en Conmutador Virtual
+                Precios en PBXDialer
             </h2>
 
             <!-- Fila de Tarjetas de Precios -->
             <div class="row g-4 justify-content-center">
 
-                <div v-for="(card, index) in solucionesData.preciosConmutador" :key="index"
+                <div v-for="(card, index) in solucionesData.preciosDialler" :key="index"
                     class="col-xl-4 col-lg-4 col-md-6 col-12 d-flex justify-content-center">
                     <div
                         class="pricing-switch-card py-4 px-xl-5 px-4  rounded-4 shadow-sm d-flex flex-column justify-content-between text-start w-100">
                         <div>
                             <!-- Cabecera de la tarjeta: Icono + Título -->
-                            <div class="d-flex align-items-center gap-1 mb-3">
+                            <div class="d-flex align-items-center gap-1 mb-4">
                                 <div
                                     class="card-icon-wrapper flex-shrink-0 d-flex align-items-center justify-content-center">
                                     <!-- Pon la ruta de tu imagen aquí -->
-                                    <img src="/img/soluciones/ICONO_3_SECCIO_2.png" alt="Icono"
+                                    <img src="/img/soluciones/ICONO_17_SECCIO_2.png" alt="Icono"
                                         class="img-fluid card-icon-img" />
                                 </div>
                                 <div>
                                     <span class="card-category d-block text-dark fw-semibold uppercase">{{ card.title
-                                    }}</span>
-                                    <h3 class="card-plan-title text-red fw-semibold mb-0">{{ card.titletwo }}</h3>
+                                        }}</span>
+                                    <h3 class="card-plan-title text-uppercase text-red fw-semibold mb-0">{{
+                                        card.tittletwo }}</h3>
                                 </div>
                             </div>
 
@@ -46,7 +47,9 @@ import { solucionesData } from '@/data/soluciones'
                                         <span class="d-block fw-bold text-dark small-currency">MXN</span>
                                     </div>
                                 </div>
-                                <span class="setup-price d-block mt-1 fw-semibold">{{ card.setup }}</span>
+                                <p class="setup-price mt-1 fw-semibold">{{ card.description }} <span
+                                        class="mt-1 fw-semibold text-red">{{ card.textred }}</span></p>
+
                             </div>
 
                             <!-- Listado de Características (centrado en la tarjeta pero alineado a la izquierda entre sí) -->
@@ -156,8 +159,7 @@ import { solucionesData } from '@/data/soluciones'
 }
 
 .setup-price {
-    font-size: 1rem;
-    color: #1a1a1a;
+    font-size: .84rem;
 }
 
 /* Listado de características */
@@ -179,6 +181,7 @@ import { solucionesData } from '@/data/soluciones'
         /* Centrado y acotado en pantallas más chicas */
         margin: 0 auto;
     }
+
     .boton-action {
         max-width: 85%;
         margin: 0 auto;
@@ -200,6 +203,15 @@ import { solucionesData } from '@/data/soluciones'
         font-size: 1.8rem;
     }
 
+}
+
+@media (min-width:1024px) and (max-width: 1366px) {
+    .setup-price {
+        font-size: .79rem;
+    }
+    .feature-text {
+    font-size: 0.92rem;
+}
 }
 
 @media (min-width: 1280px) and (max-width:1366px) {
