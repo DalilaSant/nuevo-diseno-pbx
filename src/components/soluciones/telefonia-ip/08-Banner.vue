@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SectionTitleTwo from '../common/SectionTitleTwo.vue';
-import BaseButton from '../common/BaseButton.vue';
+import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue';
+import BaseButton from '@/components/common/BaseButton.vue';
 </script>
 
 <template>
@@ -59,7 +59,10 @@ import BaseButton from '../common/BaseButton.vue';
               </div>
             </div>
 
-            <div class="col-12 col-lg-5">
+            <div class="col-12 col-lg-5"
+              v-motion-slide-visible-right
+              :delay="200" 
+              :duration="1200">
               <div class="floating-plan-card mx-auto bg-white py-4  shadow">
                 <div>
                   <div class="d-flex align-items-center gap-2 mb-3">

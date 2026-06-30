@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SectionTitleTwo from '../common/SectionTitleTwo.vue'
+import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 </script>
 
 <template>
@@ -23,7 +23,10 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-12 text-center  text-lg-start mb-5 mb-lg-0">
+        <div class="col-lg-6 col-md-12 text-center  text-lg-start mb-5 mb-lg-0"
+        v-motion-slide-visible-right
+        :delay="200" 
+        :duration="1200">
           <SectionTitleTwo class="section-title-two" display-font="display-5" lineHeight="lh-">
             Paquetes CallCenter,<br>
             <span class="text-red">mejorar tu contactación.</span>
@@ -87,9 +90,14 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
   flex-shrink: 0;
 }
 
-.text-derecho {
-  /*ajustar el tamaño porque en 1024 seve mas grande esta parte un lineheight aplicar u otros */
+@media (min-width:1024px) and (max-width:1100px) {
+  .text-derecho {
+    font-size: 1.07rem !important;
+     margin-bottom: 1rem !important;
+  }
+
 }
+
 
 /*Animacion de fotogramas*/
 @keyframes pulse {

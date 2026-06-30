@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseButton from '../common/BaseButton.vue'
+import BaseButton from '@/components/common/BaseButton.vue'
 import { solucionesData } from '@/data/soluciones'
 </script>
 
@@ -8,7 +8,7 @@ import { solucionesData } from '@/data/soluciones'
     <div class="container pt-lg-5 pb-lg-4">
       <div class="row">
         <div class="col-lg-8  col-12 order-2 order-lg-1">
-          <img src="/img/soluciones/IMAGEN_12_SECCION_1.png" alt="" class="img-fluid image-tablet">
+          <img src="/img/soluciones/IMAGEN_15_SECCION_1.png" alt="" class="img-fluid image-tablet">
         </div>
         <div v-for="(card, index) in solucionesData.preciosCobranza" :key="index"
           class="col-lg-4 col-12 justify-content-center align-content-center paquete-card order-1 order-lg-2">

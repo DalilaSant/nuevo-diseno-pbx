@@ -14,8 +14,14 @@ import BaseButton from '../common/BaseButton.vue'
           <div class="row align-items-center">
 
             <!-- Lado izquierdo: Textos -->
-            <div class="col-12 col-lg-7 text-start ">
-              <SectionTitleTwo textColor="text-white" displayFont="display-6">
+            <div class="col-12 col-lg-7 text-start "
+              v-motion-slide-visible-left
+              :delay="200" 
+              :duration="1200"
+            >
+              <SectionTitleTwo textColor="text-white" displayFont="display-6"
+              
+              >
                 ¿Listo para llevar tu empresa
                 <span class="text-red">al siguiente nivel?</span>
               </SectionTitleTwo>
@@ -48,7 +54,6 @@ import BaseButton from '../common/BaseButton.vue'
   background-size: cover;
   background-position: center;
   min-height: 320px; /* Altura base para móviles */
-  border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 

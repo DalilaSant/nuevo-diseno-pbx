@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import SectionTitleTwo from '../common/SectionTitleTwo.vue';
+import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue';
 </script>
 
 <template>
   <section class="banner-section py-0 mt-xl-1 mt-0">
-    <div class="container py-lg-4">
+    <div class="container py-lg-2">
       <!-- Contenedor principal con imagen de fondo -->
       <div class="custom-banner-bg position-relative rounded-4 overflow-hidden d-flex flex-column flex-lg-row align-items-center py-5 py-lg-0">
 
@@ -13,7 +13,11 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
           <div class="row align-items-center">
 
             <!-- Lado izquierdo: Textos -->
-            <div class="col-12 col-lg-7 text-start">
+            <div class="col-12 col-lg-7 text-start"
+              v-motion-slide-visible-left
+              :delay="200" 
+              :duration="1200"
+            >
               <SectionTitleTwo textColor="text-white" displayFont="display-6">
                 Conmutador Virtual PBX, <br> 
                 <span class="text-red">la solución definitiva</span>
@@ -95,7 +99,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
 /* Escalabilidad en pantallas grandes */
 @media (min-width: 992px) {
   .custom-banner-bg {
-    min-height: 400px; /* Aumentamos el alto del banner en computadoras */
+    min-height: 340px; /* Aumentamos el alto del banner en computadoras */
   }
 }
 

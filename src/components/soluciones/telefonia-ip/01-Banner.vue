@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import BaseButton from '../common/BaseButton.vue'
-import SectionTitleTwo from '../common/SectionTitleTwo.vue'
+import BaseButton from '@/components/common/BaseButton.vue'
+import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 </script>
 
 <template>

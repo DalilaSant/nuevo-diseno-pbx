@@ -71,7 +71,13 @@ const scrollRight = () => {
                 <span class="fw-semibold">{{ carrusel.descNegrita }}</span>{{ carrusel.descNormal }}
               </p>
 
-              <router-link :to="carrusel.link" class="text-red fw-bold text-decoration-none d-inline-flex align-items-center gap-1 small-btn">
+              <!-- Enlace Externo (si contiene http/https) -->
+              <a v-if="carrusel.link.startsWith('http')" :href="carrusel.link" target="_blank" rel="noopener" class="text-red fw-bold text-decoration-none d-inline-flex align-items-center gap-1 small-btn">
+                Ver solución
+                <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
+              </a>
+              <!-- Enlace Interno normal -->
+              <router-link v-else :to="carrusel.link" class="text-red fw-bold text-decoration-none d-inline-flex align-items-center gap-1 small-btn">
                 Ver solución
                 <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i>
               </router-link>

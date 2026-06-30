@@ -7,7 +7,7 @@ export const homeData: HomeData = {
       titulo: 'Telefonía IP',
       descNegrita: 'Infraestructura confiable',
       descNormal: ' para plataformas empresariales.',
-      link: '',
+      link: '/soluciones-telefonia-ip',
     },
     {
       icono: '/img/home/ICONO_5_SECCIO_1.png',
@@ -42,7 +42,7 @@ export const homeData: HomeData = {
       titulo: 'Agencia Creativa',
       descNegrita: '',
       descNormal: ' Soluciones en diseño web, branding y estrategias de marketing.',
-      link: '',
+      link: 'https://luminel.mx/',
     },
   ],
 

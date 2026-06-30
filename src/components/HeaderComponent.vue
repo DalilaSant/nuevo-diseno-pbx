@@ -34,7 +34,7 @@
           <!-- Dropdown Telefonía IP -->
           <li class="nav-item dropdown">
             <!-- PC: Link directo sin data-bs-toggle para que funcione el click -->
-            <router-link class="nav-link dropdown-toggle d-none d-xl-block" to="/soluciones"
+            <router-link class="nav-link dropdown-toggle d-none d-xl-block" to=""
               >Soluciones</router-link
             >
             <!-- Móvil: Botón para abrir el menú -->
@@ -48,16 +48,16 @@
             >
 
             <ul class="dropdown-menu border-0 shadow-sm">
-              <li class="d-xl-none">
+              <!-- <li class="d-xl-none">
                 <router-link
                   class="dropdown-item fw-bold border-bottom pb-2 mb-2 text-pbx-primary"
-                  to="/soluciones"
+                  to=""
                   >Ver Soluciones</router-link
                 >
-              </li>
+              </li> -->
               <li>
-                <router-link class="dropdown-item" to="/#"
-                  ><i class="fa-solid fa-plug me-2"></i> Lorem</router-link
+                <router-link class="dropdown-item" to="/soluciones-telefonia-ip"
+                  ><i class="fa-solid fa-phone me-2"></i> Telefonía IP</router-link
                 >
               </li>
               <li>
@@ -118,6 +118,7 @@
     transform: translateY(10px);
     transition: all 0.3s ease;
     margin-top: 0;
+
   }
   .navbar .nav-item:hover .dropdown-menu {
     visibility: visible;
@@ -135,6 +136,14 @@
 .navbar-nav .nav-link:hover,
 .navbar-nav .dropdown-item:hover {
   color: #003eb3 !important;
+}
+
+/* Personalización del estado activo/click en el submenú */
+.navbar-nav .dropdown-item:active,
+.navbar-nav .dropdown-item:focus,
+.navbar-nav .dropdown-item.active {
+  background-color: #e6f0ff !important; /* Azul claro muy suave y elegante */
+  color: #003eb3 !important; /* El azul oscuro de tu marca */
 }
 
 .btn-primary{

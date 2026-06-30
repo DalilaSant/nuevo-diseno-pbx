@@ -38,6 +38,14 @@ export interface CardsPreciosDialler{
   features:string[]
 }
 
+/*Banner 14*/
+export interface CardsPreciosCallcenter{
+ title:string 
+ price: string
+ features: string[]
+ featuredesc: string[]
+}
+
 //Interfaz principal que agrupa todo
 export interface SolucionesData {
   cards: SolucionesCard[]
@@ -45,4 +53,5 @@ export interface SolucionesData {
   preciosConmutador: CardsPrecios[]
   preciosCobranza: CardsPreciosCobranza[]
   preciosDialler: CardsPreciosDialler[]
+  preciosCallcenter: CardsPreciosCallcenter[]
 }

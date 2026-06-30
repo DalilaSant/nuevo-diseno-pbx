@@ -8,10 +8,10 @@ export const routes: RouteRecordRaw[] = [
     meta: { title: 'PBX Hosting | Inicio' },
   },
   {
-    path: '/soluciones',
-    name: 'soluciones',
-    component: () => import('@/views/SolucionesView.vue'),
-    meta: { title: 'PBX Hosting | Soluciones' },
+    path: '/soluciones-telefonia-ip',
+    name: 'soluciones-telefonia-ip',
+    component: () => import('@/views/soluciones/TelefoniaIPView.vue'),
+    meta: { title: 'PBX Hosting | Soluciones Telefonía IP' },
   },
   {
     path: '/numeracion',

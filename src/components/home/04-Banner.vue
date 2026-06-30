@@ -53,7 +53,6 @@
     background-size: cover;
     background-position: center right;
     min-height: 320px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Ajustes de tipografía */

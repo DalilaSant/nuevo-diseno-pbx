@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SectionTitleTwo from '../common/SectionTitleTwo.vue';
-import BaseButton from '../common/BaseButton.vue'
+import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue';
+import BaseButton from '@/components/common/BaseButton.vue'
 </script>
 
 <template>
@@ -15,7 +15,10 @@ import BaseButton from '../common/BaseButton.vue'
           <div class="row align-items-center">
 
             <!-- Lado izquierdo: Textos -->
-            <div class="col-12 col-lg-7 text-start">
+            <div class="col-12 col-lg-7 text-start"
+              v-motion-slide-visible-left
+              :delay="200" 
+              :duration="1200">
               <SectionTitleTwo textColor="text-white" displayFont="display-6">
                 Software Callcenter, <br>
                 <span class="text-red">plataforma intuitiva y dinámica.</span>

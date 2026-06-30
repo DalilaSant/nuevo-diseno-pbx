@@ -5,7 +5,7 @@
   <section class="banner-section pt-4 position-relative overflow-hidden" style="background-color: #ffffff;">
     <div class="container pb-5">
       <div class="row">
-        <div class="col-12">
+        <div class="col-12  ">
           <div
             class="benefits-bar bg-white shadow-sm rounded-4 border p-3 py-md-4 px-md-5 d-flex flex-wrap align-items-center justify-content-around gap-4">
             <!-- Beneficio 1 -->

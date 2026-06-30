@@ -102,5 +102,27 @@ export const solucionesData: SolucionesData = {
       textred:'$3,330 MXN + IVA',
       features:['Sistema dialer avanzado', '150 llamadas en simultáneo','Soporta hasta 150 agentes','Hasta 300 blaster por minuto','Grabación de llamadas']
     }
-  ]
+  ],
+
+  //Banner 14
+  preciosCallcenter:[
+    {
+      title:'BRONZE',
+      price:'$4,299',
+      features:['2 Líneas Telefónicas México','15 canales de entrada por línea','Bolsa de minutos:'],
+      featuredesc:['10,000Min a Fijos','25,000Min a Telcel','15,000Min a Otros'],
+    },
+    {
+      title: 'SILVER',
+      price: '$6,499 ',
+      features: ['5 Líneas Telefónicas México','5 canales de entrada por línea','Bolsa de minutos:',],
+      featuredesc:['15,000Min a Fijos','40,000Min a Telcel','25,000Min a Otros'],
+    },
+    {
+      title: 'GOLD',
+      price: '$9,499 ',
+      features: ['10 Líneas Telefónicas México','5 canales de entrada por línea','Bolsa de minutos:',],
+      featuredesc:['20,000Min a Fijos','55,000Min a Telcel','30,000Min a Otros'],
+    }
+  ],
 }
