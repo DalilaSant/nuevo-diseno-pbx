@@ -17,7 +17,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
               :delay="200" 
               :duration="1200"
             >
-              <SectionTitleTwo textColor="text-white" displayFont="display-3" textPosition="text-center text-lg-start">
+              <SectionTitleTwo textColor="text-white" displayFont="display-3" textPosition="text-center text-lg-start" letterSpacing="1px">
                 Porta tus <br>
                 <span class="text-red">Líneas</span>
               </SectionTitleTwo>

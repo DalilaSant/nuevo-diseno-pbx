@@ -20,6 +20,10 @@ defineProps({
     type: String,
     default: 'lh-sm'
   },
+  letterSpacing: {
+    type: String,
+    default: '-1px'
+  }
 })
 </script>
 
@@ -29,7 +33,7 @@ defineProps({
     <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
     
     <!-- Título -->
-    <h2 :class="[textColor, displayFont, lineHeight, 'fw-semibold mb-3']" style="letter-spacing: -1px;">
+    <h2 :class="[textColor, displayFont, lineHeight, 'fw-semibold mb-3']" :style="{ letterSpacing: letterSpacing }">
       <slot></slot>
     </h2>
   </div>

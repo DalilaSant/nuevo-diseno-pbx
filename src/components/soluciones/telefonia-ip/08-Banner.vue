@@ -16,7 +16,11 @@ import BaseButton from '@/components/common/BaseButton.vue';
           <div class="row  align-items-center">
 
             <!-- Lado izquierdo: Textos y los 3 Badges Informativos -->
-            <div class="col-12 col-lg-7 text-start px-lg-5">
+            <div class="col-12 col-lg-7 text-start px-lg-5"
+              v-motion-slide-visible-left
+              :delay="200" 
+              :duration="1200"
+              >
               <SectionTitleTwo textColor="text-white" displayFont="display-4" marginBotton="mb-2" lineHeight="lh-1">
                 Precios <br>
                 <span class="text-red">Paquetes VOIP</span>
@@ -59,10 +63,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
               </div>
             </div>
 
-            <div class="col-12 col-lg-5"
-              v-motion-slide-visible-right
-              :delay="200" 
-              :duration="1200">
+            <div class="col-12 col-lg-5">
               <div class="floating-plan-card mx-auto bg-white py-4  shadow">
                 <div>
                   <div class="d-flex align-items-center gap-2 mb-3">
@@ -173,6 +174,11 @@ import BaseButton from '@/components/common/BaseButton.vue';
   border: 1px solid rgba(0, 0, 0, 0.05);
   padding-right: 2.4rem;
   padding-left: 2.4rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.floating-plan-card:hover{
+  transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
 }
 
 .card-icon-wrapper {
