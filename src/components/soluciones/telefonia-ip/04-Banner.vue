@@ -39,7 +39,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
         <!-- Lado Derecho: Textos y Beneficios -->
         <div class="col-lg-6 col-12 px-lg-0 text-center  text-lg-end ">
           <div class="image-wrapper ">
-            <img src="/img/soluciones/RECURSO_2_SECCION_2.png" alt="Telefonía IP eficiente"
+            <img src="/img/soluciones/RECURSO_2_SECCION_2.png" alt="Telefonía IP eficiente" loading="lazy"
               class="img-fluid mx-auto solutions-featured-img" />
           </div>
         </div>
