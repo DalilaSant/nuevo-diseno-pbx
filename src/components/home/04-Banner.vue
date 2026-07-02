@@ -49,7 +49,7 @@
 
 <style scoped>
 .custom-banner-bg {
-    background-image: url('/img/home/IMAGEN_3_SECCION_1.png');
+    background-image: url('/img/home/IMAGEN_3_SECCION_1.webp');
     background-size: cover;
     background-position: center right;
     min-height: 320px;

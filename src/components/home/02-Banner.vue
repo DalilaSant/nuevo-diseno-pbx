@@ -8,7 +8,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue'
       <div class="row align-items-center flex-column-reverse flex-lg-row mb-5 gx-lg-5">
         <div class="col-lg-6 col-md-12 text-center">
           <div class="banner-image-container p-2 position-relative d-inline-block">
-            <img src="/img/home/IMAGEN_2_SECCION_1.png" alt="PBX Hosting Soluciones" class="img-fluid mx-auto d-block"
+            <img src="/img/home/IMAGEN_2_SECCION_1.webp" alt="PBX Hosting Soluciones" class="img-fluid mx-auto d-block"
               style="max-height: 400px; width: auto; object-fit: contain;" />
 
             <!-- Recuadro flotante con punto parpadeante -->

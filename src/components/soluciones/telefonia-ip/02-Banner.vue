@@ -11,7 +11,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
         <!-- Lado Izquierdo: Imagen -->
         <div class="col-lg-6 col-12 text-center text-lg-start order-2 order-lg-1">
           <div class="image-wrapper ">
-            <img src="/img/soluciones/IMAGEN_2_SECCION_1.png" alt="Telefonía IP eficiente" class="img-fluid solutions-featured-img" />
+            <img src="/img/soluciones/IMAGEN_2_SECCION_1.webp" alt="Telefonía IP eficiente" class="img-fluid solutions-featured-img" />
           </div>
         </div>
 

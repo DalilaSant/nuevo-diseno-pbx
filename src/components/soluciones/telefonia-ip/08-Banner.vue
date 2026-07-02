@@ -121,7 +121,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
 
 <style scoped>
 .custom-banner-bg {
-  background-image: url('/img/soluciones/IMAGEN_11_SECCION_1.png');
+  background-image: url('/img/soluciones/IMAGEN_11_SECCION_1.webp');
   background-size: cover;
   background-position: center;
   min-height: 320px;

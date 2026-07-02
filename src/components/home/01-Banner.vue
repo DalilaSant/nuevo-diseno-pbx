@@ -32,7 +32,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
             :delay="200" 
             :duration="1200">
           <div class="banner-image-container p-2">
-            <img src="/img/home/IMAGEN_1_SECCION_1.png" alt="PBX Hosting Soluciones" class="img-fluid mx-auto d-block banner-img"
+            <img src="/img/home/IMAGEN_1_SECCION_1.webp" alt="PBX Hosting Soluciones" class="img-fluid mx-auto d-block banner-img"
               style="max-height: 400px; width: auto; object-fit: contain;" />
           </div>
         </div>

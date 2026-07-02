@@ -10,33 +10,29 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
       <div class="solutions-banner position-relative rounded-4 overflow-hidden d-flex align-items-center p-4 p-md-5">
         <div class="container-fluid my-2 position-relative z-3">
           <div class="row align-items-center g-4">
-            
+
             <!-- Columna Izquierda: Textos y Título -->
-            <div class="col-lg-4 col-12 text-center text-lg-start mb-4 mb-lg-0"
-              v-motion-slide-left
-              :delay="200" 
-              :duration="1200"
-            >
-              <SectionTitleTwo textColor="text-white" displayFont="display-3" textPosition="text-center text-lg-start" letterSpacing="1px">
+            <div class="col-lg-4 col-12 text-center text-lg-start mb-4 mb-lg-0" v-motion-slide-left :delay="200"
+              :duration="1200">
+              <SectionTitleTwo textColor="text-white" displayFont="display-3" textPosition="text-center text-lg-start"
+                letterSpacing="1px">
                 Porta tus <br>
                 <span class="text-red">Líneas</span>
               </SectionTitleTwo>
-              
-              <p class="mb-4 text-light mx-md-auto mx-lg-0 parrafos" >
+
+              <p class="mb-4 text-light mx-md-auto mx-lg-0 parrafos">
                 Lo último en <span style="color:#f12537">tecnología</span> y comunicación empresarial.
               </p>
             </div>
 
             <!-- Columna Derecha: Tarjetas de Precios -->
-            <div class="col-lg-8 col-12"
-              v-motion-slide-right
-              :delay="200" 
-              :duration="1200"
-            >
-              <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center justify-content-lg-around align-items-stretch">
-                
+            <div class="col-lg-8 col-12" v-motion-slide-right :delay="200" :duration="1200">
+              <div
+                class="d-flex flex-column flex-lg-row gap-3 justify-content-center justify-content-lg-around align-items-stretch">
+
                 <!-- Tarjeta 1 -->
-                <div class="price-card bg-white p-4 rounded-4 shadow d-flex flex-column justify-content-between text-start position-relative">
+                <div
+                  class="price-card bg-white p-4 rounded-4 shadow d-flex flex-column justify-content-between text-start position-relative">
                   <div>
                     <!-- Fila de Encabezado: Icono Izquierda, Título y Canales Derecha -->
                     <div class="d-flex align-items-center gap-1 mb-3">
@@ -48,7 +44,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
                         <span class="card-subtitle fw-semibold">2 Canales</span>
                       </div>
                     </div>
-                    
+
                     <!-- Bloque de Precio Centrado -->
                     <div class="price-block my-4">
                       <div class="price-container d-inline-flex align-items-center justify-content-center gap-1">
@@ -61,15 +57,17 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
                       <span class="price-period d-block text-dark mt-1">Al año</span>
                     </div>
                   </div>
-                  
+
                   <!-- Botón abajo a la izquierda -->
                   <div class="text-start boton-cellphone">
-                    <BaseButton class="ms-3" texto="Me interesa" enlace="#" :mostrarIcono="true" roundedClass="rounded-1 py-2 px-3 fs-6" />
+                    <BaseButton class="ms-3" texto="Me interesa" enlace="#" :mostrarIcono="true"
+                      roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
 
                 <!-- Tarjeta 2 -->
-                <div class="price-card bg-white p-4 rounded-4 shadow d-flex flex-column justify-content-between text-start position-relative">
+                <div
+                  class="price-card bg-white p-4 rounded-4 shadow d-flex flex-column justify-content-between text-start position-relative">
                   <div>
                     <!-- Fila de Encabezado: Icono Izquierda, Título y Canales Derecha -->
                     <div class="d-flex align-items-center gap-1 mb-3">
@@ -81,7 +79,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
                         <span class="card-subtitle fw-semibold">10 Canales</span>
                       </div>
                     </div>
-                    
+
                     <!-- Bloque de Precio Centrado -->
                     <div class="price-block my-4">
                       <div class="price-container d-inline-flex align-items-center justify-content-center gap-1">
@@ -94,15 +92,17 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
                       <span class="price-period d-block text-dark mt-1">Al año</span>
                     </div>
                   </div>
-                  
+
                   <!-- Botón abajo a la izquierda -->
                   <div class="text-start boton-cellphone">
-                    <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true" roundedClass="rounded-1 py-2 px-3 fs-6" />
+                    <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                      roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
 
                 <!-- Tarjeta 3 -->
-                <div class="price-card bg-white p-4 rounded-4 shadow d-flex flex-column justify-content-between text-start position-relative">
+                <div
+                  class="price-card bg-white p-4 rounded-4 shadow d-flex flex-column justify-content-between text-start position-relative">
                   <div>
                     <!-- Fila de Encabezado: Icono Izquierda, Título y Canales Derecha -->
                     <div class="d-flex align-items-center gap-1 mb-3">
@@ -114,7 +114,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
                         <span class="card-subtitle fw-semibold">2 Canales</span>
                       </div>
                     </div>
-                    
+
                     <!-- Bloque de Precio Centrado -->
                     <div class="price-block my-4">
                       <div class="price-container d-inline-flex align-items-center justify-content-center gap-1">
@@ -127,10 +127,11 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
                       <span class="price-period d-block text-dark mt-1">Al año</span>
                     </div>
                   </div>
-                  
+
                   <!-- Botón abajo a la izquierda -->
                   <div class="text-start boton-cellphone">
-                    <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true" roundedClass="rounded-1 py-2 px-3 fs-6" />
+                    <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                      roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
 
@@ -146,7 +147,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 
 <style scoped>
 .solutions-banner {
-  background-image: url("/img/soluciones/IMAGEN_1_SECCION_1.png");
+  background-image: url("/img/soluciones/IMAGEN_1_SECCION_1.webp");
   background-size: cover;
   background-position: center;
   min-height: 450px;
@@ -165,7 +166,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
   z-index: 1;
 }
 
-.parrafos{
+.parrafos {
   max-width: 280px;
   font-size: 1.41rem;
 }
@@ -177,7 +178,8 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
   max-width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.05);
-  z-index: 2; /* Asegurar que queden por encima del pseudo-elemento overlay */
+  z-index: 2;
+  /* Asegurar que queden por encima del pseudo-elemento overlay */
 }
 
 .price-card:hover {
@@ -192,7 +194,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
   background-color: #ffffff;
   border-radius: 50%;
   padding: 1px;
-  
+
 }
 
 .card-icon-img {
@@ -210,7 +212,8 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 
 .card-subtitle {
   font-size: 0.8rem;
-  color: #f12537; /* Color rojo */
+  color: #f12537;
+  /* Color rojo */
   display: block;
   margin-top: 2px;
 }
@@ -255,10 +258,10 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 /* Responsividad para pantallas móviles y tablets */
 @media (max-width: 991px) {
   .solutions-banner {
-    min-height: auto; 
+    min-height: auto;
     padding: 2.5rem 1rem !important;
   }
-  
+
 
 
   .solutions-banner::before {
@@ -267,25 +270,30 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
   }
 
   .price-card {
-    max-width: 320px; /* Ancho cómodo centrado */
+    max-width: 320px;
+    /* Ancho cómodo centrado */
     width: 100%;
-    margin: 0 auto; /* Centrar tarjetas apiladas */
+    margin: 0 auto;
+    /* Centrar tarjetas apiladas */
   }
-  .parrafos{
-  max-width:100%;
+
+  .parrafos {
+    max-width: 100%;
   }
 }
 
 /* Responsividad intermedia para pantallas de laptops (1024px a 1366px) */
 @media (min-width: 1024px) and (max-width: 1366px) {
   .solutions-banner {
-    min-height: 420px; /* Asegura espacio suficiente para las tarjetas */
+    min-height: 420px;
+    /* Asegura espacio suficiente para las tarjetas */
   }
 
   .price-card {
     min-width: 200px !important;
     max-width: 240px !important;
-    padding: 1.25rem !important; /* Más compacto */
+    padding: 1.25rem !important;
+    /* Más compacto */
   }
 
   .card-icon-wrapper {
@@ -306,7 +314,8 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
     font-size: 2.4rem !important;
   }
 
-  .small-iva, .small-currency {
+  .small-iva,
+  .small-currency {
     font-size: 0.85rem !important;
   }
 
@@ -315,26 +324,28 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
   }
 
   .price-card :deep(.btn) {
-    white-space: nowrap !important; /* Evita que el texto del botón se rompa en dos líneas */
+    white-space: nowrap !important;
+    /* Evita que el texto del botón se rompa en dos líneas */
     font-size: 0.75rem !important;
     padding: 6px 10px !important;
   }
-  
+
 }
 
 @media (min-width: 1024px) and (max-width: 1100px) {
   .card-title {
-  font-size: 0.80rem !important;
+    font-size: 0.80rem !important;
   }
-  .parrafos{
+
+  .parrafos {
     font-size: 1.14rem;
-    max-width:85%;
+    max-width: 85%;
   }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1920px) {
   .price-card :deep(.btn) {
-    white-space: nowrap !important; 
+    white-space: nowrap !important;
     font-size: 0.90rem !important;
     padding: 6px 10px !important;
   }
@@ -346,12 +357,14 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
     justify-content: center !important;
     width: 100% !important;
   }
+
   .boton-cellphone :deep(.btn) {
     width: 100% !important;
     display: inline-flex !important;
     justify-content: center !important;
     text-align: center !important;
   }
+
   .boton-cellphone :deep(.ms-3) {
     margin-left: 0 !important;
   }
