@@ -31,12 +31,52 @@ onMounted(() => {
 
 
 useHead({
-  title: 'PbxHosting | Proveedores de Telefonía IP en México',
+  title: 'PbxHosting | Soluciones de Telefonía IP en México',
   meta: [
     {
       name: 'description',
       content:
         'Transforma la comunicación empresarial con nuestra avanzada Telefonía VOIP en México. Redefine la eficiencia y reduce costos con nuestros servicios personalizados.',
+    },
+    // Etiquetas Open Graph (OG) para Redes Sociales y WhatsApp
+    {
+      property: 'og:title',
+      content: 'PbxHosting | Soluciones de Telefonía IP en México',
+    },
+    {
+      property: 'og:description',
+      content:
+        'Transforma la comunicación empresarial con nuestra avanzada Telefonía VOIP en México. Redefine la eficiencia y reduce costos con nuestros servicios personalizados.',
+    },
+    {
+      property: 'og:image',
+      content: 'https://www.pbxhosting.com.mx/img/logonew.png', // Reemplazar con la URL final del logo o banner promocional
+    },
+    {
+      property: 'og:url',
+      content: 'https://www.pbxhosting.com.mx/soluciones-telefonia-ip',
+    },
+    {
+      property: 'og:type',
+      content: 'website',
+    },
+    // Twitter Cards
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    },
+    {
+      name: 'twitter:title',
+      content: 'PbxHosting | Soluciones de Telefonía IP en México',
+    },
+    {
+      name: 'twitter:description',
+      content:
+        'Transforma la comunicación empresarial con nuestra avanzada Telefonía VOIP en México.',
+    },
+    {
+      name: 'twitter:image',
+      content: 'https://www.pbxhosting.com.mx/img/logonew.png',
     },
   ],
 })
