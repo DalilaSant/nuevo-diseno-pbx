@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
+import NotFoundView from '@/views/NotFoundView.vue'
+
 
 export const routes: RouteRecordRaw[] = [
   {
@@ -37,6 +39,14 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/ContactoView.vue'),
     meta: { title: 'PBX Hosting | Contacto' },
   },
+    //ERROR 404
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'not-found',
+    component: NotFoundView,
+    meta: { title: 'PBX Hosting | Página no encontrada' }
+  }
+
 
 ]
 
