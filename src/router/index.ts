@@ -16,6 +16,13 @@ export const routes: RouteRecordRaw[] = [
     meta: { title: 'PBX Hosting | Soluciones Telefonía IP' },
   },
   {
+    path: '/sms-masivo',
+    name: 'sms-masivo',
+    component: () => import('@/views/soluciones/SmsMasivoView.vue'),
+    meta: { title: 'PBX Hosting | Soluciones SMS Masivo'}
+
+  },
+  {
     path: '/numeracion',
     name: 'numeracion',
     component: () => import('@/views/NumeracionView.vue'),
@@ -53,6 +60,17 @@ export const routes: RouteRecordRaw[] = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
+})
+
+// Guardia global para actualizar dinámicamente el título de la pestaña del navegador
+router.beforeEach((to, from, next) => {
+  const routeTitle = to.meta.title as string | undefined
+  if (routeTitle) {
+    document.title = routeTitle
+  } else {
+    document.title = 'PBX Hosting | Proveedores de Telefonía IP'
+  }
+  next()
 })
 
 export default router

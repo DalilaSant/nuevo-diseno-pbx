@@ -61,8 +61,8 @@
                 >
               </li>
               <li>
-                <router-link class="dropdown-item" to="/#"
-                  ><i class="fa-solid fa-address-book me-2"></i> Lorem</router-link
+                <router-link class="dropdown-item" to="/sms-masivo"
+                  ><i class="fa-solid fa-message me-2"></i> SMS Masivo</router-link
                 >
               </li>
               <li>
