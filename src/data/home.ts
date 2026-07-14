@@ -14,7 +14,7 @@ export const homeData: HomeData = {
       titulo: 'SMS Masivo',
       descNegrita: 'Envía recordatorios,',
       descNormal: ' promociones, cupones, cobros y mucho más.',
-      link: '',
+      link: '/soluciones-sms-masivo',
     },
     {
       icono: '/img/home/ICONO_6_SECCIO_1.png',

@@ -16,8 +16,8 @@ export const routes: RouteRecordRaw[] = [
     meta: { title: 'PBX Hosting | Soluciones Telefonía IP' },
   },
   {
-    path: '/sms-masivo',
-    name: 'sms-masivo',
+    path: '/soluciones-sms-masivo',
+    name: 'soluciones-sms-masivo',
     component: () => import('@/views/soluciones/SmsMasivoView.vue'),
     meta: { title: 'PBX Hosting | Soluciones SMS Masivo'}
 
