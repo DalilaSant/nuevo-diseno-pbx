@@ -9,7 +9,11 @@ import BaseButton from '@/components/common/BaseButton.vue';
       <div class="row align-items-center ps-0 ps-lg-4 g-4 g-lg-5">
 
         <!-- Lado Izquierdo: Imagen -->
-        <div class="col-lg-6 col-12 text-center text-lg-start ">
+        <div class="col-lg-6 col-12 text-center text-lg-start "
+        v-motion-slide-visible-left
+        :delay="200" 
+        :duration="2000"
+        >
           <div class="text-content-wrapper" v-motion-fade-visible :delay="200" :duration="1200">
             <!-- Línea decorativa roja -->
             <div class="accent-line mb-3 mx-auto mx-lg-0"></div>

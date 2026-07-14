@@ -9,7 +9,7 @@ import {benefitsSMSDos} from '@/data/benefits-bar';
 <template>
   <section class="solutions-features-section py-0">
     <BannerAllElements :items="bannerSMSMasivo.dataBanner" />
-    <BenefitsBar class="pt-2" :items = "benefitsSMSDos.benefits"  />
+    <BenefitsBar class="pt-2 benefits-hidden-medium" :items = "benefitsSMSDos.benefits"  />
   </section>
 </template>
 
@@ -22,6 +22,12 @@ import {benefitsSMSDos} from '@/data/benefits-bar';
 @media (max-width: 991px) {
   .solutions-features-section {
     padding: 3rem 0;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .benefits-hidden-medium {
+    display: none !important;
   }
 }
 </style>

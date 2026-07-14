@@ -21,10 +21,14 @@ import { benefitsData } from '@/data/benefits-bar.ts';
         </SectionTitleTwoCenter>
       </div>
     </div>
-    <BenefitsBar :items="benefitsData.benefits"/>
+    <BenefitsBar class="benefits-hidden-medium" :items="benefitsData.benefits"/>
   </section>
 </template>
 
 <style scoped>
-
+@media (min-width: 800px) and (max-width: 1024px) {
+  .benefits-hidden-medium {
+    display: none !important;
+  }
+}
 </style>

@@ -109,7 +109,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <BenefitsBar class="pt-4" :items = "benefitsSMS.benefits"/>
+    <BenefitsBar class="pt-4 benefits-hidden-medium" :items = "benefitsSMS.benefits" />
     
   </section>
 </template>
@@ -209,7 +209,11 @@ onUnmounted(() => {
     margin-left: 0 !important;
   }
 }
-
+@media (min-width: 800px) and (max-width: 1024px) {
+  .benefits-hidden-medium {
+    display: none !important;
+  }
+}
 @media (max-width: 991px) {
   .sms-banner {
     min-height: auto;
@@ -225,12 +229,6 @@ onUnmounted(() => {
   }
 }
 
-/* Responsividad intermedia para pantallas de laptops (1024px a 1366px) */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  
-
-
-}
 
 @media (min-width: 1024px) and (max-width: 1100px) {
 

@@ -3,13 +3,17 @@ import BaseButton from '@/components/common/BaseButton.vue';
 </script>
 
 <template>
-  <section class="solutions-features-section container shadow py-5 my-lg-5  pb-4">
+  <section class="solutions-features-section container shadow py-lg-1 my-lg-5  pb-4">
     <div class="container py-lg-3">
       <!-- Fila principal: Se invierte en móvil para que la imagen quede arriba si es necesario, o se mantiene -->
       <div class="row align-items-center ps-0 ps-lg-4 g-4 g-lg-5">
 
         <!-- Lado Izquierdo: Imagen -->
-        <div class="col-lg-6 col-12 text-center text-lg-start ">
+        <div class="col-lg-6 col-12 text-center text-lg-start "
+        v-motion-slide-visible-left
+        :delay="200" 
+        :duration="2000"
+        >
           <div class="text-content-wrapper" 
           v-motion-fade-visible :delay="200" :duration="1200">
             <!-- Línea decorativa roja -->

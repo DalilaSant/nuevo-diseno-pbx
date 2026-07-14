@@ -15,7 +15,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
             <div class="col-lg-4 col-12 text-center text-lg-start mb-4 mb-lg-0" v-motion-slide-left :delay="200"
               :duration="1200">
               <SectionTitleTwo textColor="text-white" displayFont="display-3" textPosition="text-center text-lg-start"
-                letterSpacing="1px">
+                letterSpacing="1px" lineHeight="lh-1">
                 Porta tus <br>
                 <span class="text-red">Líneas</span>
               </SectionTitleTwo>

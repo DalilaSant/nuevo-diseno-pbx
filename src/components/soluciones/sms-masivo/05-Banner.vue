@@ -29,7 +29,7 @@ import BaseButton from '../../common/BaseButton.vue'
               <SectionTitleTwo textColor="text-white" displayFont="display-6" textPosition="text-center text-lg-end" linePosition="mx-auto ms-lg-auto me-lg-0"
               
               >
-                SMS Flash, <br>
+                <span class="display-5 fw-semibold">SMS Flash,</span><br>
                 <span class="text-red">atención inmediata.</span>
               </SectionTitleTwo>
 

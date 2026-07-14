@@ -12,8 +12,8 @@ import { bannerSMSMasivoTres } from '@/data/bannerallelements'
           src="/img/soluciones/RECURSO_5_SECCION_3.png" 
           alt="Notificación RCS" 
           class="overlay-notification"
-          v-motion-slide-visible-top
-          :delay="1000" 
+          v-motion-slide-visible-bottom
+          :delay="500" 
           :duration="900"
         />
       </template>
