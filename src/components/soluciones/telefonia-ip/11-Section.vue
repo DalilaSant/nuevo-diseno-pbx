@@ -1,83 +1,12 @@
 <script setup lang="ts">
+import BenefitsBar from '@/components/common/BenefitsBar.vue';
+import { benefitsTelefonia } from '@/data/benefits-bar';
+
 </script>
 
 <template>
   <section class="banner-section pt-4 position-relative overflow-hidden" style="background-color: #ffffff;">
-    <div class="container pb-5">
-      <div class="row">
-        <div class="col-12  ">
-          <div
-            class="benefits-bar bg-white shadow-sm rounded-4 border p-3 py-md-4 px-md-5 d-flex flex-wrap align-items-center justify-content-around gap-4">
-            <!-- Beneficio 1 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/soluciones/ICONO_12_SECCIO_2.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Gestión de </span>
-                <span class="">llamadas</span>
-              </div>
-            </div>
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 2 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/soluciones/ICONO_13_SECCIO_2.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Sistema de </span>
-                <span class="">Monitoreo</span>
-              </div>
-            </div>
-
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 3 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/soluciones/ICONO_14_SECCIO_2.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Acceso </span>
-                <span class="">multiplataforma</span>
-              </div>
-            </div>
-
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 4 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/soluciones/ICONO_15_SECCIO_2.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Campañas </span>
-                <span class="">telefónicas</span>
-              </div>
-            </div>
-
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 5 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/soluciones/ICONO_16_SECCIO_2.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Sistema de </span>
-                <span class="">grabación</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
+    <BenefitsBar :items="benefitsTelefonia.benefits"/>
   </section>
 </template>
 

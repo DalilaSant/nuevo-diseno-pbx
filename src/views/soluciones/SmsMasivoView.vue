@@ -4,7 +4,12 @@ import { useHead } from '@vueuse/head'
 import LoaderComponent from '@/components/LoaderComponent.vue'
 
 import BannerPrincipal from '@/components/soluciones/sms-masivo/01-Banner.vue'
-
+import BannerDos from '@/components/soluciones/sms-masivo/02-Banner.vue'
+import BannerTres from '@/components/soluciones/sms-masivo/03-Banner.vue'
+import Section04 from '@/components/soluciones/sms-masivo/04-Section.vue'
+import Banner05 from '@/components/soluciones/sms-masivo/05-Banner.vue'
+import Banner06 from '@/components/soluciones/sms-masivo/06-Banner.vue'
+import Banner07 from '@/components/soluciones/sms-masivo/07-Banner.vue'
 const loading = ref(true)
 
 onMounted(() =>{
@@ -19,8 +24,13 @@ onMounted(() =>{
 <template>
     <LoaderComponent />
     <div v-if="!loading">
-      <BannerPrincipal />  
-
+      <BannerPrincipal /> 
+      <BannerDos /> 
+      <BannerTres />
+      <Section04 />
+      <Banner05 />
+      <Banner06 />
+      <Banner07 />
     </div>
 </template>
 

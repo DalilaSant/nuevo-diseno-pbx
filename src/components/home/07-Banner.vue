@@ -10,7 +10,7 @@ import BaseButton from '../common/BaseButton.vue'
       <div class="custom-banner-bg position-relative rounded-4 overflow-hidden d-flex align-items-center">
 
         <!-- Contenido del Banner -->
-        <div class="container position-relative z-3 pt-lg-0  px-4 px-md-5 text-white">
+        <div class="container position-relative  z-3 pt-lg-0  px-4 px-md-5 text-white">
           <div class="row align-items-center">
 
             <!-- Lado izquierdo: Textos -->

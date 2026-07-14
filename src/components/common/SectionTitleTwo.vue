@@ -23,6 +23,10 @@ defineProps({
   letterSpacing: {
     type: String,
     default: '-1px'
+  },
+  linePosition: {
+    type: String,
+    default: 'mx-auto mx-lg-0'
   }
 })
 </script>
@@ -30,7 +34,7 @@ defineProps({
 <template>
   <div :class="[textPosition, marginBotton]">
     <!-- Línea decorativa roja -->
-    <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
+    <div :class="['accent-line  mb-3', linePosition]"></div>
     
     <!-- Título -->
     <h2 :class="[textColor, displayFont, lineHeight, 'fw-semibold mb-3']" :style="{ letterSpacing: letterSpacing }">

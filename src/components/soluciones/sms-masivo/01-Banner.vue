@@ -2,12 +2,17 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import BaseButton from '@/components/common/BaseButton.vue'
 import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
+import BenefitsBar from '@/components/common/BenefitsBar.vue'
+import { benefitsSMS } from '@/data/benefits-bar'
 
 // Definición de las 3 tarjetas de imágenes rectangulares
 const cards = ref([
-  { id: 1, img: '/img/soluciones/RECURSO_2_SECCION_3.png', alt: 'Notificación SMS 1' },
-  { id: 2, img: '/img/soluciones/RECURSO_3_SECCION_3.png', alt: 'Notificación SMS 2' },
-  { id: 3, img: '/img/soluciones/RECURSO_4_SECCION_3.png', alt: 'Notificación SMS 3' },
+  { id: 1, img: '/img/soluciones/RECURSO_4_BANNER_1_SECCION_3.png', alt: 'Notificación SMS 1' },
+  { id: 2, img: '/img/soluciones/RECURSO_1_BANNER_1_SECCION_3.png', alt: 'Notificación SMS 2' },
+  { id: 3, img: '/img/soluciones/RECURSO_2_BANNER_1_SECCION_3.png', alt: 'Notificación SMS 3' },
+  { id: 4, img: '/img/soluciones/RECURSO_3_BANNER_1_SECCION_3.png', alt: 'Notificación SMS 3' },
+  { id: 5, img: '/img/soluciones/RECURSO_5_BANNER_1_SECCION_3.png', alt: 'Notificación SMS 3' },
+  
 ])
 
 const isPaused = ref(false)
@@ -44,7 +49,7 @@ const moveNext = () => {
 }
 
 onMounted(() => {
-  intervalId = setInterval(moveNext, 2000) // Se desplaza cada 2 segundos
+  intervalId = setInterval(moveNext, 3000) 
 })
 
 onUnmounted(() => {
@@ -56,7 +61,7 @@ onUnmounted(() => {
   <section class="py-5">
     <div class="container">
       <!-- sms-banner encapsulado dentro del container con esquinas redondeadas -->
-      <div class="sms-banner position-relative rounded-4 overflow-hidden d-flex align-items-center p-4 p-md-5">
+      <div class="sms-banner position-relative rounded-4 overflow-hidden d-flex align-items-center p-4 p-md-5 py-xl-0">
         <div class="container-fluid my-2 position-relative z-3">
           <div class="row align-items-center g-4">
 
@@ -104,81 +109,8 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <div class="container pb-5">
-      <div class="row">
-        <div class="col-12">
-          <div
-            class="benefits-bar bg-white shadow-sm rounded-4 border p-3 py-md-4 px-md-5 d-flex flex-wrap align-items-center justify-content-around gap-4">
-            <!-- Beneficio 1 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/home/ICONO_7_SECCIO_1.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Reduce costos</span>
-                <span class="">operativos</span>
-              </div>
-            </div>
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 2 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/home/ICONO_8_SECCIO_1.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Rendimiento</span>
-                <span class="">optimizado</span>
-              </div>
-            </div>
-
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 3 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/home/ICONO_9_SECCIO_1.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Comunicación</span>
-                <span class="">segura</span>
-              </div>
-            </div>
-
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 4 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/home/ICONO_10_SECCIO_1.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Flexibilidad</span>
-                <span class="">para trabajar</span>
-              </div>
-            </div>
-
-            <!-- Divisor Vertical para Escritorio -->
-            <div class="d-none d-xl-block vertical-divider"></div>
-
-            <!-- Beneficio 5 -->
-            <div class="d-flex align-items-center gap-2">
-              <div class="icon-placeholder rounded-3 flex-shrink-0 d-flex align-items-center justify-content-center">
-                <img src="/img/home/ICONO_11_SECCIO_1.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-start lh-sm">
-                <span class="d-block fw-semibold">Escalabilidad</span>
-                <span class="">garantizada</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
+    <BenefitsBar class="pt-4" :items = "benefitsSMS.benefits"/>
+    
   </section>
 </template>
 
@@ -186,7 +118,7 @@ onUnmounted(() => {
 
 <style scoped>
 .sms-banner {
-  background-image: url("/img/soluciones/IMAGEN_1_SECCION_1.webp");
+  background-image: url("/img/soluciones/IMAGEN_1_SECCION_3.png");
   background-size: cover;
   background-position: center;
   min-height: 450px;
@@ -259,42 +191,6 @@ onUnmounted(() => {
 
 
 /* Responsividad para pantallas móviles y tablets */
-@media (max-width: 991px) {
-  .sms-banner {
-    min-height: auto;
-    padding: 2.5rem 1rem !important;
-  }
-
-
-
-  .sms-banner::before {
-    /* En vertical, el gradiente oscuro cubre toda la tarjeta uniformemente */
-    background: rgba(12, 24, 36, 0.9);
-  }
-
-  .parrafos {
-    max-width: 100%;
-  }
-}
-
-/* Responsividad intermedia para pantallas de laptops (1024px a 1366px) */
-@media (min-width: 1024px) and (max-width: 1366px) {
-  .sms-banner {
-    min-height: 420px;
-    /* Asegura espacio suficiente para las tarjetas */
-  }
-
-
-}
-
-@media (min-width: 1024px) and (max-width: 1100px) {
-
-  .parrafos {
-    font-size: 1.14rem;
-    max-width: 85%;
-  }
-}
-
 @media (max-width: 800px) {
   .boton-cellphone {
     display: flex !important;
@@ -313,4 +209,43 @@ onUnmounted(() => {
     margin-left: 0 !important;
   }
 }
+
+@media (max-width: 991px) {
+  .sms-banner {
+    min-height: auto;
+    padding: 2.5rem 1rem !important;
+  }
+  .sms-banner::before {
+    /* En vertical, el gradiente oscuro cubre toda la tarjeta uniformemente */
+    background: rgba(12, 24, 36, 0.9);
+  }
+
+  .parrafos {
+    max-width: 100%;
+  }
+}
+
+/* Responsividad intermedia para pantallas de laptops (1024px a 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  
+
+
+}
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+
+  .parrafos {
+    font-size: 1.14rem;
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1024px){
+.sms-banner {
+    min-height: 380px;
+  }
+}
+
+
+
 </style>
