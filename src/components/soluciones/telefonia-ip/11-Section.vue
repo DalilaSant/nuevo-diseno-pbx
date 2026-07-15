@@ -6,7 +6,7 @@ import { benefitsTelefonia } from '@/data/benefits-bar';
 
 <template>
   <section class="banner-section pt-4 position-relative overflow-hidden" style="background-color: #ffffff;">
-    <BenefitsBar :items="benefitsTelefonia.benefits"/>
+    <BenefitsBar class="benefits-hidden-medium" :items="benefitsTelefonia.benefits"/>
   </section>
 </template>
 
@@ -47,6 +47,11 @@ import { benefitsTelefonia } from '@/data/benefits-bar';
     grid-column: span 2;
     justify-content: center !important;
     padding-left: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefits-hidden-medium {
+    display: none !important;
   }
 }
 

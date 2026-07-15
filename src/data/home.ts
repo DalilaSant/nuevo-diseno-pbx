@@ -21,7 +21,7 @@ export const homeData: HomeData = {
       titulo: 'WhatsApp Masivo',
       descNegrita: 'Campañas,',
       descNormal: ' notificaciones y mensajes automatizados.',
-      link: '',
+      link: '/soluciones-whatsapp-masivo',
     },
     {
       icono: '/img/home/ICONO_13_SECCIO_1.png',

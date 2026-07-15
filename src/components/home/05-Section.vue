@@ -26,7 +26,7 @@ import { benefitsData } from '@/data/benefits-bar.ts';
 </template>
 
 <style scoped>
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .benefits-hidden-medium {
     display: none !important;
   }
