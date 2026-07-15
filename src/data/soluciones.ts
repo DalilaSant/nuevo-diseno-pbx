@@ -68,61 +68,110 @@ export const solucionesData: SolucionesData = {
   ],
 
   //Banner09
-  preciosCobranza:[
+  preciosCobranza: [
     {
-      title:'Paquete',
-      titletwo:'Cobranza',
-      price:'$3,500',
-    }
+      title: 'Paquete',
+      titletwo: 'Cobranza',
+      price: '$3,500',
+    },
   ],
 
   //Banner12
-  preciosDialler:[
+  preciosDialler: [
     {
-      title:'PBX',
-      tittletwo:'Dialer 30',
-      price:'$1,320',
+      title: 'PBX',
+      tittletwo: 'Dialer 30',
+      price: '$1,320',
       description: 'Costo de instalación ',
-      textred:'$660 MXN + IVA',
-      features:['Sistema dialer avanzado', '30 llamadas en simultáneo', 'Soporta hasta 30 agentes', 'Hasta 80 blaster por minuto', 'Grabación de llamadas'],
+      textred: '$660 MXN + IVA',
+      features: [
+        'Sistema dialer avanzado',
+        '30 llamadas en simultáneo',
+        'Soporta hasta 30 agentes',
+        'Hasta 80 blaster por minuto',
+        'Grabación de llamadas',
+      ],
     },
     {
-      title:'PBX',
-      tittletwo:'DIALER 60',
-      price:'$2,640 ',
-      description:'Costo de instalación ',
-      textred:'$1,320 MXN + IVA',
-      features:['Sistema dialer avanzado', '60 llamadas en simultáneo','Soporta hasta 60 agentes','Hasta 150 blaster por minuto','Grabación de llamadas'],
+      title: 'PBX',
+      tittletwo: 'DIALER 60',
+      price: '$2,640 ',
+      description: 'Costo de instalación ',
+      textred: '$1,320 MXN + IVA',
+      features: [
+        'Sistema dialer avanzado',
+        '60 llamadas en simultáneo',
+        'Soporta hasta 60 agentes',
+        'Hasta 150 blaster por minuto',
+        'Grabación de llamadas',
+      ],
     },
     {
-      title:'PBX',
-      tittletwo:'DIALER 150',
-      price:'$6,660',
-      description:'Costo de instalación',
-      textred:'$3,330 MXN + IVA',
-      features:['Sistema dialer avanzado', '150 llamadas en simultáneo','Soporta hasta 150 agentes','Hasta 300 blaster por minuto','Grabación de llamadas']
-    }
+      title: 'PBX',
+      tittletwo: 'DIALER 150',
+      price: '$6,660',
+      description: 'Costo de instalación',
+      textred: '$3,330 MXN + IVA',
+      features: [
+        'Sistema dialer avanzado',
+        '150 llamadas en simultáneo',
+        'Soporta hasta 150 agentes',
+        'Hasta 300 blaster por minuto',
+        'Grabación de llamadas',
+      ],
+    },
   ],
 
   //Banner 14
-  preciosCallcenter:[
+  preciosCallcenter: [
     {
-      title:'BRONZE',
-      price:'$4,299',
-      features:['2 Líneas Telefónicas México','15 canales de entrada por línea','Bolsa de minutos:'],
-      featuredesc:['10,000Min a Fijos','25,000Min a Telcel','15,000Min a Otros'],
+      title: 'BRONZE',
+      price: '$4,299',
+      features: [
+        '2 Líneas Telefónicas México',
+        '15 canales de entrada por línea',
+        'Bolsa de minutos:',
+      ],
+      featuredesc: ['10,000Min a Fijos', '25,000Min a Telcel', '15,000Min a Otros'],
     },
     {
       title: 'SILVER',
       price: '$6,499 ',
-      features: ['5 Líneas Telefónicas México','5 canales de entrada por línea','Bolsa de minutos:',],
-      featuredesc:['15,000Min a Fijos','40,000Min a Telcel','25,000Min a Otros'],
+      features: [
+        '5 Líneas Telefónicas México',
+        '5 canales de entrada por línea',
+        'Bolsa de minutos:',
+      ],
+      featuredesc: ['15,000Min a Fijos', '40,000Min a Telcel', '25,000Min a Otros'],
     },
     {
       title: 'GOLD',
       price: '$9,499 ',
-      features: ['10 Líneas Telefónicas México','5 canales de entrada por línea','Bolsa de minutos:',],
-      featuredesc:['20,000Min a Fijos','55,000Min a Telcel','30,000Min a Otros'],
-    }
+      features: [
+        '10 Líneas Telefónicas México',
+        '5 canales de entrada por línea',
+        'Bolsa de minutos:',
+      ],
+      featuredesc: ['20,000Min a Fijos', '55,000Min a Telcel', '30,000Min a Otros'],
+    },
   ],
+
+  //SOLUCION WHATSAPP MASIVO BANNER 03
+  cardsWhatsapp:[
+    {
+      title:'WhatsApp Autenticación',
+      desc: 'Refuerza la seguridad mediante una autenticación confiable.',
+      bgClass:'/img/soluciones/IMAGEN_5_SECCION_4.png',
+    },
+    {
+      title:'WhatsApp Utilidad',
+      desc: 'Automatiza notificaciones para mantener informados a tus usuarios.',
+      bgClass:'/img/soluciones/IMAGEN_6_SECCION_44.png',
+    },
+    {
+      title:'WhatsApp API',
+      desc: 'Gestiona conversaciones desde una sola plataforma.',
+      bgClass:'/img/soluciones/IMAGEN_7_SECCION_4.png',
+    },
+  ]
 }

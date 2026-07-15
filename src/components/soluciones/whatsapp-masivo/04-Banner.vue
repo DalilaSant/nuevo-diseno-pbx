@@ -17,19 +17,18 @@ import BaseButton from '@/components/common/BaseButton.vue';
 
             <!-- Título Principal -->
             <h2 class="featured-title fw-semibold mb-3 mb-lg-1  lh-sm text-dark">
-              Troncal SIP, escala <br>
-              <span class="text-red">tu comunicación.</span>
+              Contrata ahora 10 días  <br>
+              <span class="text-red">totalmente gratis.</span>
             </h2>
 
             <!-- Descripción -->
             <p class="featured-desc mb-3 mb-lg-4 ">
-              Las Líneas SIP conectan tu telefonía empresarial a través de internet, gestionando llamadas de forma más
-              eficiente y rentable.
+              Con nuestra solución de WhatsApp Masivo, cada interacción es una oportunidad de venta.
             </p>
 
             <!-- Botón de Acción -->
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <BaseButton texto="Activa tu cuenta" :mostrarIcono="true" enlace="#"
+              <BaseButton texto="Cotizar" :mostrarIcono="true" enlace="#"
                 roundedClass="rounded-1 py-2 px-4 fs-6" />
             </div>
           </div>
@@ -39,7 +38,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
         <!-- Lado Derecho: Textos y Beneficios -->
         <div class="col-lg-6 col-12 px-lg-0 text-center  text-lg-end ">
           <div class="image-wrapper ">
-            <img src="/img/soluciones/RECURSO_2_SECCION_2.png" alt="Telefonía IP eficiente" loading="lazy"
+            <img src="/img/soluciones/IMAGEN_6_SECCION_4.png" alt="Telefonía IP eficiente" loading="lazy"
               class="img-fluid mx-auto solutions-featured-img" />
           </div>
         </div>
@@ -52,9 +51,9 @@ import BaseButton from '@/components/common/BaseButton.vue';
 <style scoped>
 /* Estilos generales de la sección */
 .solutions-features-section {
-  background-image: url("/img/soluciones/RECURSO_1_SECCION_2.png");
+  background-image: url("/img/soluciones/RECURSO_1_SECCION_4.png");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -102,7 +101,11 @@ import BaseButton from '@/components/common/BaseButton.vue';
    ========================================================================== */
 
 
-
+@media (min-width:1280px){
+  .solutions-features-section {
+    background-position: right;
+  }
+}
 /* 1. Desde 1024px en adelante (Balance y alineación perfecta) */
 @media (min-width: 1024px) {
   .image-wrapper {
@@ -111,13 +114,13 @@ import BaseButton from '@/components/common/BaseButton.vue';
   }
 
   .solutions-featured-img {
-    max-height: 370px;
+    max-height: 350px;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1100px) {
   .solutions-featured-img {
-    width: 50%;
+    width: 65%;
   }
 }
 
@@ -133,7 +136,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
   }
 
   .solutions-featured-img {
-    max-height: 360px;
+    max-height: 290px;
   }
 
   :deep(.btn) {

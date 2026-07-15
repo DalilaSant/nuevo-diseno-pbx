@@ -66,8 +66,8 @@
                 >
               </li>
               <li>
-                <router-link class="dropdown-item" to="/#"
-                  ><i class="fa-solid fa-phone me-2"></i> Lorem</router-link
+                <router-link class="dropdown-item" to="/soluciones-whatsapp-masivo"
+                  ><i class="fa-brands fa-whatsapp me-2"></i> Whatsapp Masivo</router-link
                 >
               </li>
             </ul>

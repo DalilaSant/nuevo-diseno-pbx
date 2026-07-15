@@ -3,7 +3,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
 </script>
 
 <template>
-  <section class="solutions-features-section container shadow py-5 py-lg-2 my-lg-5  ">
+  <section class="solutions-features-section rounded-4 container shadow py-5 py-lg-2 my-lg-5  ">
     <div class="container ">
       <!-- Fila principal: Se invierte en móvil para que la imagen quede arriba si es necesario, o se mantiene -->
       <div class="row align-items-center ps-0 ps-lg-4 g-4 g-lg-5">

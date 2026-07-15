@@ -114,3 +114,28 @@ export const benefitsSMSDos: BenefitsBarData = {
     },
   ]
 }
+
+export const benefitsWhatsapp: BenefitsBarData = {
+  benefits:[
+    {
+      icono: 'img/soluciones/ICONO_11_SECCIO_4.png',
+      titulo: 'Segmenta tu \nbase de datos',
+      subtitulo: ''
+    },
+    {
+      icono: 'img/soluciones/ICONO_9_SECCIO_4.png',
+      titulo: 'Envía campañas \nal instante',
+      subtitulo: ''
+    },
+    {
+      icono: 'img/soluciones/ICONO_12_SECCIO_4.png',
+      titulo: 'Analiza resultados \nen tiempo real.',
+      subtitulo: ''
+    },
+    {
+      icono: 'img/soluciones/ICONO_10_SECCIO_4.png',
+      titulo: 'Monitorea cada \ninteracción.',
+      subtitulo: ''
+    },
+  ]
+}

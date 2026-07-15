@@ -64,7 +64,7 @@ export const bannerSMSMasivoTres: BannerAllData = {
   dataBanner: [
     {
       image: '/img/soluciones/IMAGEN_5_SECCION_3.png',
-      title: 'SMS RCS, ',
+      title: 'Mensajes RCS, ',
       titleRed: 'Business Messaging.',
       description: 'Contenido enriquecido, botones de acción, imágenes y elementos interactivos.',
       item: [
@@ -78,4 +78,25 @@ export const bannerSMSMasivoTres: BannerAllData = {
       enlace: '#',
     },
   ],
+}
+
+export const bannerWhatsapp: BannerAllData = {
+  dataBanner: [
+    {
+      image: '/img/soluciones/IMAGEN_2_SECCION_4.png',
+      title: 'Fee variable por',
+      titleRed: 'mensaje procesado',
+      description: 'Servicios diseñados para las necesidades de cada empresa. Consulta con tu asesor',
+      descriptionDark: ' las tarifas y opciones disponibles.',
+      item: [
+        {
+          text: 'Mayor conversión.',
+        },
+        {
+          text: 'Tus campañas siempre activas.'
+        }
+      ],
+      enlace: '#',
+    }
+  ]
 }

@@ -7,10 +7,12 @@ const props = withDefaults(
     items: BannerItem[];
     reverse?: boolean;
     lineHeight?: string;
+    marginBottom?: string;
   }>(),
   {
     reverse: false,
-    lineHeight: 'lh-sm'
+    lineHeight: 'lh-sm',
+    marginBottom: 'mb-4'
   }
 )
 
@@ -24,7 +26,7 @@ const props = withDefaults(
       <div class="col-lg-6 col-12 text-center text-lg-start order-2 order-lg-1">
         <div class="image-wrapper position-relative ">
           <img :src="banner.image" alt="Telefonía IP eficiente"
-            class="img-fluid solutions-featured-img" />
+            class="img-fluid  solutions-featured-img" />
             <!-- Ranura (Slot) reservada para la imagen flotante -->
             <slot name="image-overlay"></slot>
         </div>
@@ -45,11 +47,11 @@ const props = withDefaults(
 
           <!-- Descripción -->
           <p class="featured-desc mb-3 mb-lg-2 ">
-            {{ banner.description }}
+            {{ banner.description }}<span class="fw-semibold">{{ banner.descriptionDark }}</span>
           </p>
 
           <!-- Listado de Checks -->
-          <div class="features-list d-flex flex-column gap-3 mb-4 align-items-center align-items-lg-start">
+          <div :class="['features-list d-flex flex-column gap-3 align-items-center align-items-lg-start', marginBottom]">
             <div v-for="(subItem, subIndex) in banner.item" :key="subIndex" class="feature-item d-flex align-items-center gap-2">
               <i class="fa-regular fa-circle-check check-icon"></i>
               <span class="feature-text fw-semibold text-dark">
@@ -95,6 +97,7 @@ const props = withDefaults(
   max-height: 380px;
   object-fit: cover;
   display: block;
+
 }
 
 

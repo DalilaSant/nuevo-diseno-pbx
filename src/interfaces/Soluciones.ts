@@ -46,6 +46,12 @@ export interface CardsPreciosCallcenter{
  featuredesc: string[]
 }
 
+export interface WhatsappCard{
+  title: string
+  desc: string
+  bgClass: string 
+}
+
 //Interfaz principal que agrupa todo
 export interface SolucionesData {
   cards: SolucionesCard[]
@@ -54,4 +60,5 @@ export interface SolucionesData {
   preciosCobranza: CardsPreciosCobranza[]
   preciosDialler: CardsPreciosDialler[]
   preciosCallcenter: CardsPreciosCallcenter[]
+  cardsWhatsapp: WhatsappCard[]
 }

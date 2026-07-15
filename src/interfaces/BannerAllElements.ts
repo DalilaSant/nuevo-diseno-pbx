@@ -3,7 +3,8 @@ export interface BannerItem {
     title: string
     titleRed: string
     description: string
-    item: {
+    descriptionDark?: string
+    item?: {
         text: string
     }[]
     enlace:string

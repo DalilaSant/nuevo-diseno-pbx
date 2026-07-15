@@ -23,6 +23,12 @@ export const routes: RouteRecordRaw[] = [
 
   },
   {
+    path: '/soluciones-whatsapp-masivo',
+    name: 'soluciones-whatsapp-masivo',
+    component: () => import('@/views/soluciones/WhatsappMasivoView.vue'),
+    meta: { title: 'PBX Hosting | Soluciones WhatsApp Masivo'}
+  },
+  {
     path: '/numeracion',
     name: 'numeracion',
     component: () => import('@/views/NumeracionView.vue'),
