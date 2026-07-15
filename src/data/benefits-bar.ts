@@ -119,12 +119,12 @@ export const benefitsWhatsapp: BenefitsBarData = {
   benefits:[
     {
       icono: 'img/soluciones/ICONO_11_SECCIO_4.png',
-      titulo: 'Segmenta tu \nbase de datos',
+      titulo: 'Segmenta tu \nbase de datos.',
       subtitulo: ''
     },
     {
       icono: 'img/soluciones/ICONO_9_SECCIO_4.png',
-      titulo: 'Envía campañas \nal instante',
+      titulo: 'Envía campañas \nal instante.',
       subtitulo: ''
     },
     {

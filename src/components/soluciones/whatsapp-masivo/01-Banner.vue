@@ -92,7 +92,7 @@ import { benefitsWhatsapp } from '@/data/benefits-bar'
     margin-left: 0 !important;
   }
 }
-@media (min-width: 800px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .benefits-hidden-medium {
     display: none !important;
   }
