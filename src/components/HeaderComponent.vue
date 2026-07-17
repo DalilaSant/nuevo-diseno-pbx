@@ -66,13 +66,18 @@
                 >
               </li>
               <li>
-                <router-link class="dropdown-item" to="/soluciones-whatsapp-masivo"
-                  ><i class="fa-brands fa-whatsapp me-2"></i> Whatsapp Masivo</router-link
-                >
+                <router-link class="dropdown-item" to="/soluciones-whatsapp-masivo">
+                  <i class="fa-brands fa-whatsapp me-2 custom-whatsapp-icon"></i>Whatsapp Masivo
+                </router-link>  
               </li>
               <li>
                 <router-link class="dropdown-item" to="/soluciones-agenteia"
                   ><i class="fa-solid fa-robot me-2"></i>Agente IA</router-link
+                >
+              </li>
+              <li>
+                <router-link class="dropdown-item" to="/infraestructura-web"
+                  ><i class="fa-solid fa-server me-2"></i>Infraestructura Web</router-link
                 >
               </li>
             </ul>
@@ -169,5 +174,19 @@
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
   }
+}
+
+/* Icono circular de WhatsApp a la inversa */
+.custom-whatsapp-icon {
+  background-color: #272727; /* Mismo color gris/negro que el texto y demás iconos */
+  color: #ffffff !important; /* El logo de WhatsApp en blanco */
+  border-radius: 50%;
+  width: 1.15rem;
+  height: 1.15rem;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem !important;
+  vertical-align: middle;
 }
 </style>

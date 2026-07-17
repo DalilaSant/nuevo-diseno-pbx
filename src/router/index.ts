@@ -35,6 +35,12 @@ export const routes: RouteRecordRaw[] = [
     meta: { title: 'PBX Hosting | Soluciones Agente IA'}
   },
   {
+    path: '/infraestructura-web',
+    name: 'infraestructura-web',
+    component: () => import('@/views/soluciones/InfraestructuraView.vue'),
+    meta: {title: 'PBX Hosting | Infraestructura Web'}
+  },
+  {
     path: '/numeracion',
     name: 'numeracion',
     component: () => import('@/views/NumeracionView.vue'),

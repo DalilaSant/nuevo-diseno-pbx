@@ -48,7 +48,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
     <div class="row justify-content-center align-items-center">
       <div class="col-12">
         <p class="text-center description">
-          Para más información, consulta nuestro canal de YouTube: <a href="#" class="text-red fw-semibold text-decoration-none">click aquí</a>
+          Para más información, consulta nuestro canal de YouTube: <a href="https://www.youtube.com/@Cirox-PlataformaOmnicanal" class="text-red fw-semibold text-decoration-none">click aquí</a>
         </p>
       </div>
     </div>
