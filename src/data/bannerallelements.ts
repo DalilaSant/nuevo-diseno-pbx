@@ -100,3 +100,24 @@ export const bannerWhatsapp: BannerAllData = {
     }
   ]
 }
+
+export const bannerAgenteIA: BannerAllData = {
+  dataBanner: [
+    {
+      image: '/img/soluciones/IMAGEN_2_SECCION_5.png',
+      title: 'Monitorea reportes ',
+      titleRed: 'y transcripciones.',
+      description: 'Descubre cómo transformar la atención de tu negocio con tecnología de voz automatizada con ',
+      descriptionDark: ' nuestras soluciones en Agente IA.',
+      item: [
+        {
+          text: 'Pre-atención.',
+        },
+        {
+          text: 'Escalabilidad sin personal.',
+        },
+      ],
+      enlace: '',
+    }
+  ]
+}

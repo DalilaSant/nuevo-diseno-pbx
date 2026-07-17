@@ -70,6 +70,11 @@
                   ><i class="fa-brands fa-whatsapp me-2"></i> Whatsapp Masivo</router-link
                 >
               </li>
+              <li>
+                <router-link class="dropdown-item" to="/soluciones-agenteia"
+                  ><i class="fa-solid fa-robot me-2"></i>Agente IA</router-link
+                >
+              </li>
             </ul>
           </li>
 

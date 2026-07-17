@@ -52,6 +52,12 @@ export interface WhatsappCard{
   bgClass: string 
 }
 
+export interface AgenteIACard{
+  title:string
+  desc: string
+  bgClass: string 
+}
+
 //Interfaz principal que agrupa todo
 export interface SolucionesData {
   cards: SolucionesCard[]
@@ -61,4 +67,5 @@ export interface SolucionesData {
   preciosDialler: CardsPreciosDialler[]
   preciosCallcenter: CardsPreciosCallcenter[]
   cardsWhatsapp: WhatsappCard[]
+  cardsAgenteIA: AgenteIACard[]
 }

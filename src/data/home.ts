@@ -28,7 +28,7 @@ export const homeData: HomeData = {
       titulo: 'Inteligencia Artificial',
       descNegrita: '',
       descNormal: ' Automatiza conversaciones y brinda atención inmediata 24/7.',
-      link: '',
+      link: '/soluciones-agenteia',
     },
     {
       icono: '/img/home/ICONO_14_SECCIO_1.png',

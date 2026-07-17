@@ -173,5 +173,24 @@ export const solucionesData: SolucionesData = {
       desc: 'Gestiona conversaciones desde una sola plataforma.',
       bgClass:'/img/soluciones/IMAGEN_7_SECCION_4.png',
     },
+  ],
+
+  //AGENTE IA BANNER 03
+  cardsAgenteIA:[
+    {
+      title:'Agente IA – Recepción',
+      desc: 'Recibe llamadas y dirige a cada cliente al área correspondiente.',
+      bgClass: 'img/soluciones/IMAGEN_3_SECCION_5.png',
+    },
+    {
+      title:'Agente IA para campañas',
+      desc: 'Realiza llamadas automatizadas para ventas y promociones.',
+      bgClass: 'img/soluciones/IMAGEN_4_SECCION_5.png',
+    },
+    {
+      title:'Agente IA – Soporte',
+      desc: 'Brinda respuestas inmediatas, y ofrece atención continua.',
+      bgClass: 'img/soluciones/IMAGEN_5_SECCION_5.png',
+    },
   ]
 }

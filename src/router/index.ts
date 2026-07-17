@@ -29,6 +29,12 @@ export const routes: RouteRecordRaw[] = [
     meta: { title: 'PBX Hosting | Soluciones WhatsApp Masivo'}
   },
   {
+    path: '/soluciones-agenteia',
+    name: 'soluciones-agenteia',
+    component: () => import('@/views/soluciones/AgenteIAView.vue'),
+    meta: { title: 'PBX Hosting | Soluciones Agente IA'}
+  },
+  {
     path: '/numeracion',
     name: 'numeracion',
     component: () => import('@/views/NumeracionView.vue'),

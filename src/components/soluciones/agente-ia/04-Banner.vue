@@ -17,19 +17,18 @@ import BaseButton from '@/components/common/BaseButton.vue';
 
             <!-- Título Principal -->
             <h2 class="featured-title fw-semibold mb-3 mb-lg-1  lh-sm text-dark">
-              Contrata ahora 10 días  <br>
-              <span class="text-red">totalmente gratis.</span>
+              Un Agente IA <br>
+              <span class="text-red">transforma la atención.</span>
             </h2>
 
             <!-- Descripción -->
             <p class="featured-desc mb-3 mb-lg-4 ">
-              Con nuestra solución de WhatsApp Masivo, cada interacción es una oportunidad de venta.
+              Automatiza procesos, mejora los tiempos de respuesta y brinda una experiencia profesional en cada llamada.
             </p>
 
             <!-- Botón de Acción -->
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <BaseButton texto="Cotizar" :mostrarIcono="true" enlace="#"
-                roundedClass="rounded-1 py-2 px-4 fs-6" />
+              <BaseButton texto="Cotizar" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
             </div>
           </div>
 
@@ -38,14 +37,22 @@ import BaseButton from '@/components/common/BaseButton.vue';
         <!-- Lado Derecho: Textos y Beneficios -->
         <div class="col-lg-6 col-12 px-lg-0 text-center  text-lg-end ">
           <div class="image-wrapper ">
-            <img src="/img/soluciones/IMAGEN_6_SECCION_4.png" alt="Telefonía IP eficiente" loading="lazy"
+            <img src="/img/soluciones/IMAGEN_6_SECCION_5.png" alt="Telefonía IP eficiente" loading="lazy"
               class="img-fluid mx-auto solutions-featured-img" />
           </div>
         </div>
-
       </div>
     </div>
   </section>
+  <div class="container pt-lg-0 pt-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12">
+        <p class="text-center description">
+          Para más información, consulta nuestro canal de YouTube: <a href="#" class="text-red fw-semibold text-decoration-none">click aquí</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -94,18 +101,21 @@ import BaseButton from '@/components/common/BaseButton.vue';
   max-width: 520px;
 }
 
-
+.description{
+  font-size: 1.15rem;
+}
 
 /* ==========================================================================
    RESPONSIVIDAD Y ADAPTACIÓN EN PANTALLAS
    ========================================================================== */
 
 
-@media (min-width:1280px){
+@media (min-width:1280px) {
   .solutions-features-section {
     background-position: right;
   }
 }
+
 /* 1. Desde 1024px en adelante (Balance y alineación perfecta) */
 @media (min-width: 1024px) {
   .image-wrapper {
@@ -164,6 +174,10 @@ import BaseButton from '@/components/common/BaseButton.vue';
     max-height: 280px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .description{
+    font-size: .98rem;
   }
 }
 </style>

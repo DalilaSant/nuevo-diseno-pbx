@@ -139,3 +139,28 @@ export const benefitsWhatsapp: BenefitsBarData = {
     },
   ]
 }
+
+export const benefitsAgenteIA: BenefitsBarData = {
+  benefits: [
+    {
+      icono: 'img/soluciones/ICONO_2_SECCIO_5.png',
+      titulo: 'Monitorea \ninteracciones.',
+      subtitulo: ''
+    },
+    {
+      icono: 'img/soluciones/ICONO_3_SECCIO_5.png',
+      titulo: 'Filtrado y \ntransferencia.',
+      subtitulo: ''
+    },
+    {
+      icono: 'img/soluciones/ICONO_4_SECCIO_5.png',
+      titulo: 'Reducción de \ncarga operativa.',
+      subtitulo: ''
+    },
+    {
+      icono: 'img/soluciones/ICONO_5_SECCIO_5.png',
+      titulo: 'Reportes \ninteligentes.',
+      subtitulo: ''
+    },
+  ]
+}
