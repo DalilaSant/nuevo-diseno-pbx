@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import type { BenefitItem } from '@/interfaces/BenefitsBar';
 
-defineProps<{
-  items: BenefitItem[];
-}>()
+const props = withDefaults(
+  defineProps<{
+    items: BenefitItem[];
+    paddingClass?: string;
+  }>(),
+  {
+    paddingClass: 'pb-5'
+  }
+)
 </script>
 
 <template>
-  <div class="container pb-5">
+  <div :class="['container', paddingClass]">
     <div class="row">
       <div class="col-12">
         <div

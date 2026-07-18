@@ -58,6 +58,15 @@ export interface AgenteIACard{
   bgClass: string 
 }
 
+//Infraestructura Web Section02
+export interface CardsPreciosHosting{
+  title: string
+  titletwo: string
+  price: string
+  setup: string
+  features: string[]
+}
+
 //Interfaz principal que agrupa todo
 export interface SolucionesData {
   cards: SolucionesCard[]
@@ -68,4 +77,5 @@ export interface SolucionesData {
   preciosCallcenter: CardsPreciosCallcenter[]
   cardsWhatsapp: WhatsappCard[]
   cardsAgenteIA: AgenteIACard[]
+  preciosHosting: CardsPreciosHosting[]
 }

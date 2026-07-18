@@ -164,3 +164,35 @@ export const benefitsAgenteIA: BenefitsBarData = {
     },
   ]
 }
+
+export const benefitsInfraestructura: BenefitsBarData = {
+  benefits: [
+    {
+      icono: 'img/soluciones/ICONO_4_SECCIO_6.png',
+      titulo: 'Administrador \nhosting Cpanel.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/soluciones/ICONO_5_SECCIO_6.png',
+      titulo: 'Hosting \nApache Linux.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/soluciones/ICONO_6_SECCIO_6.png',
+      titulo: 'Protege con \nCertificado SSL.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/soluciones/ICONO_7_SECCIO_6.png',
+      titulo: 'Versiones PHP\n hasta 8.X.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/soluciones/ICONO_8_SECCIO_6.png',
+      titulo: 'Instalación \nWordPress.',
+      subtitulo: '',
+    },
+
+  ]
+
+}

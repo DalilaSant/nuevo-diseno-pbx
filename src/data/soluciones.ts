@@ -192,5 +192,30 @@ export const solucionesData: SolucionesData = {
       desc: 'Brinda respuestas inmediatas, y ofrece atención continua.',
       bgClass: 'img/soluciones/IMAGEN_5_SECCION_5.png',
     },
-  ]
+  ],
+
+  //INFRAESTRUCTURA WEB SECTION 02
+  preciosHosting: [
+    {
+      title: 'Hosting',
+      titletwo: 'Lite',
+      price: '$589 ',
+      setup: '',
+      features: ['8GB de Almacenamiento', '80GB de Transferencia Mensual', '100 Cuentas de Correo','Certificado SSL','10 Bases de datos MySQL','5 Cuentas FTP','Respaldo JetBackup 5','Instalador de Apps Softaculous','Dominio Gratis primer año*',],
+    },
+    {
+      title: 'Hosting ',
+      titletwo: 'Deluxe ',
+      price: '$929 ',
+      setup: '',
+      features: ['20GB de Almacenamiento', '20TB de Transferencia Mensual', 'Cuentas de Correo ilimitadas', 'Certificado SSL','15 Bases de datos MySQL','15 Cuentas FTP','Soporta 5 Dominios Adicionales','Instalador de Apps Softaculous','Respaldo JetBackup 5','Dominio Gratis primer año*',],
+    },
+    {
+      title: 'Hosting',
+      titletwo: 'Enterprise',
+      price: '$1,219 ',
+      setup: '',
+      features: ['35GB de Almacenamiento', 'Transferencia ilimitada', 'Cuentas de Correo ilimitadas', 'Certificado SSL','Bases de datos ilimitadas','Cuentas FTP ilimitadas','Soporta 10 Dominios Adicionales','Respaldo JetBackup 5','Instalador de Apps Softaculous','Dominio Gratis primer año*'],
+    },
+  ],
 }

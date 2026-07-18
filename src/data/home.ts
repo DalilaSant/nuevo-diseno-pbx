@@ -35,7 +35,7 @@ export const homeData: HomeData = {
       titulo: 'Infraestructura Web',
       descNegrita: '',
       descNormal: 'Tecnología preparada para todos tus proyectos.',
-      link: '',
+      link: '/infraestructura-web',
     },
     {
       icono: '/img/home/ICONO_15_SECCIO_1.png',
