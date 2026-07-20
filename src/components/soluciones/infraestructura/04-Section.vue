@@ -45,7 +45,7 @@ onMounted(() => {
 });
 </script>
 <template>
-  <section class="domain-section pt-5 pt-lg-0 pb-3">
+  <section class="domain-section pt-5 my-xl-4 pt-lg-0 pb-3">
     <div class="container">
       <div class="domain-card mx-auto  p-md-5">
         <!-- Título -->
@@ -89,11 +89,11 @@ onMounted(() => {
         </div>
         <!-- Enlaces / Pastillas de abajo -->
         <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-          <a href="" class="btn btn-pill-action d-flex align-items-center gap-2 px-4 py-2">
+          <a class="btn btn-pill-action d-flex align-items-center gap-2 px-4 py-2">
             <i class="fa-solid fa-arrows-rotate text-muted"></i>
             Transferir Dominio
           </a>
-          <a href=""
+          <a 
             class="btn btn-pill-action d-flex align-items-center gap-2 px-4 py-2">
             <i class="fa-solid fa-server text-muted"></i>
             Hosting + Dominio

@@ -218,4 +218,77 @@ export const solucionesData: SolucionesData = {
       features: ['35GB de Almacenamiento', 'Transferencia ilimitada', 'Cuentas de Correo ilimitadas', 'Certificado SSL','Bases de datos ilimitadas','Cuentas FTP ilimitadas','Soporta 10 Dominios Adicionales','Respaldo JetBackup 5','Instalador de Apps Softaculous','Dominio Gratis primer año*'],
     },
   ],
+
+  //seccion 06
+  preciosServidores: [
+    {
+      title: '',
+      titletwo: 'VPS 01',
+      price: '$140 ',
+      setup: '',
+      features: ['1CPU Core','1GB de RAM','25GB SSD Disco','1TB de Transferencia','40Gbps Network In','1000Mbps Network Out','Soporte Técnico',],
+    },
+    {
+      title: '',
+      titletwo: 'VPS 02',
+      price: '$260 ',
+      setup: '',
+      features: ['1CPU Core','2GB de RAM','50GB SSD Disco','2TB de Transferencia','40Gbps Network In','2000Mbps Network Out','Soporte Técnico',],
+    },
+    {
+      title: '',
+      titletwo: 'VPS 03',
+      price: '$520 ',
+      setup: '',
+      features: ['2CPU Core','4GB de RAM','80GB SSD Disco','4TB de Transferencia','40Gbps Network In','4000Mbps Network Out','Soporte Técnico',],
+    },
+    {
+      title: '',
+      titletwo: 'VPS 04',
+      price: '$1,040  ',
+      setup: '',
+      features: ['4CPU Core','8GB de RAM','160GB SSD Disco','5TB de Transferencia','40Gbps Network In','4000Mbps Network Out','Soporte Técnico',],
+    },
+
+  ],
+
+  //seccion 8 
+
+  preciosDedicado: [
+    {
+      title: 'Dedicado 4GB',
+      titletwo: '',
+      price: '$780 ',
+      setup: '',
+      features: ['4GB de Ram','2CPU Core','80GB Almacén SSD','4TB de Transferencia','40Gbps Network In','4000Mbps Network Out',],
+    },
+    {
+      title: 'Dedicado 8GB',
+      titletwo: '',
+      price: '$1,560',
+      setup: '',
+      features: ['8GB de Ram','4CPU Core','160GB Almacén SSD','5TB de Transferencia','40Gbps Network In','5000Mbps Network Out',],
+    },
+    {
+      title: 'Dedicado 16GB',
+      titletwo: '',
+      price: '$3,120',
+      setup: '',
+      features: ['16GB de Ram','8CPU Core','320GB Almacén SSD','6TB de Transferencia','40Gbps Network In','6000Mbps Network Out',],
+    },
+    {
+      title: 'Dedicado 32GB',
+      titletwo: '',
+      price: '$6,240',
+      setup: '',
+      features: ['32GB de Ram','16CPU Core','640GB Almacén SSD','7TB de Transferencia','40Gbps Network In','7000Mbps Network Out',],
+    },
+    {
+      title: 'Dedicado 64GB',
+      titletwo: '',
+      price: '$12,480',
+      setup: '',
+      features: ['64GB de Ram','32CPU Core','1280GB Almacén SSD','8TB de Transferencia','40Gbps Network In','8000Mbps Network Out',],
+    },
+  ]
 }

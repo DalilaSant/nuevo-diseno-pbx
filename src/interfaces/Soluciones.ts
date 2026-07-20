@@ -67,6 +67,22 @@ export interface CardsPreciosHosting{
   features: string[]
 }
 
+export interface CardsPreciosServidores{
+  title:string
+  titletwo: string
+  price: string
+  setup: string
+  features: string[]
+}
+
+export interface CardsPreciosDedicado{
+  title:String
+  titletwo: string
+  price:string
+  setup: string
+  features: string[]
+}
+
 //Interfaz principal que agrupa todo
 export interface SolucionesData {
   cards: SolucionesCard[]
@@ -78,4 +94,6 @@ export interface SolucionesData {
   cardsWhatsapp: WhatsappCard[]
   cardsAgenteIA: AgenteIACard[]
   preciosHosting: CardsPreciosHosting[]
+  preciosServidores: CardsPreciosServidores[]
+  preciosDedicado: CardsPreciosDedicado[]
 }
