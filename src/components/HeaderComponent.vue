@@ -80,6 +80,10 @@
                   ><i class="fa-solid fa-server me-2"></i>Infraestructura Web</router-link
                 >
               </li>
+              <li>
+                <a class="dropdown-item" href="https://luminel.mx/" target="_blank"
+                  ><i class="fa-solid fa-pen-to-square me-2"></i>Diseño Web</a>
+              </li>
             </ul>
           </li>
 
