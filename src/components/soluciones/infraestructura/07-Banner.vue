@@ -22,7 +22,7 @@
                 <div class="row align-items-center">
 
                     <!-- Lado izquierdo: Textos -->
-                    <div class="col-12 col-lg-7 text-center text-lg-start">
+                    <div class="col-12 col-lg-7 text-center text-lg-start" v-motion-slide-visible-left :delay="200" :duration="1200">
                         <div class="accent-line mb-3 mx-auto mx-lg-0">
                         </div>
                         <h2 class="display-6 fw-semibold mb-3 banner-title">

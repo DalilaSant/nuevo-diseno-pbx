@@ -14,17 +14,17 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue';
         class="custom-banner-bg position-relative rounded-4 overflow-hidden d-flex flex-column flex-lg-row align-items-center py-5 py-lg-0">
 
         <!-- Contenido del Banner -->
-        <div class="container position-relative z-3 pt-lg-0 pb-lg-5 px-4 px-md-5 text-white">
+        <div class="container position-relative z-3 pt-lg-4 pb-lg-5 px-4 px-md-5 text-white">
           <div class="row align-items-center">
 
             <!-- Lado izquierdo: Textos -->
             <div class="col-12 col-lg-7 text-start" v-motion-slide-visible-left :delay="200" :duration="1200">
-              <SectionTitleTwo textColor="text-white" displayFont="display-6">
+              <SectionTitleTwo textColor="text-white" displayFont="display-4" lineHeight="lh-1">
                 Hosting Compartido,  <br>
                 <span class="text-red">crece con confianza.</span>
               </SectionTitleTwo>
 
-              <p class="fs-5 text-white text-lg-start text-center mb-0 banner-desc">
+              <p class="fs-4 text-white text-lg-start text-center mb-0 banner-desc">
                 Hospeda tu sitio web con una solución estable, rápida y fácil de administrar.
               </p>
             </div>
@@ -42,15 +42,15 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue';
             <h4 class="fw-semibold text-danger text-center">Implementación <br> sugerida para:</h4>
             <div class="d-flex align-items-center gap-2">
               <img src="/img/home/ICONO_12_SECCIO_1.png" alt="check" class="check-icon-small" />
-              <span class="text-dark fw-semibold">Sitios corporativos</span>
+              <span class="text-dark fw-semibold">Sitios corporativos.</span>
             </div>
             <div class="d-flex align-items-center gap-2">
               <img src="/img/home/ICONO_12_SECCIO_1.png" alt="check" class="check-icon-small" />
-              <span class="text-dark fw-semibold">Tiendas en línea</span>
+              <span class="text-dark fw-semibold">Tiendas en línea.</span>
             </div>
             <div class="d-flex align-items-center gap-2">
               <img src="/img/home/ICONO_12_SECCIO_1.png" alt="check" class="check-icon-small" />
-              <span class="text-dark fw-semibold">Blogs y portafolios</span>
+              <span class="text-dark fw-semibold">Blogs y portafolios.</span>
             </div>
           </div>
         </div>

@@ -208,14 +208,14 @@ export const solucionesData: SolucionesData = {
       titletwo: 'Deluxe ',
       price: '$929 ',
       setup: '',
-      features: ['20GB de Almacenamiento', '20TB de Transferencia Mensual', 'Cuentas de Correo ilimitadas', 'Certificado SSL','15 Bases de datos MySQL','15 Cuentas FTP','Soporta 5 Dominios Adicionales','Instalador de Apps Softaculous','Respaldo JetBackup 5','Dominio Gratis primer año*',],
+      features: ['20GB de Almacenamiento SSD', '20TB de Transferencia Mensual', 'Cuentas de Correo ilimitadas', 'Certificado SSL','15 Bases de datos MySQL','15 Cuentas FTP','Soporta 5 Dominios Adicionales','Respaldo JetBackup 5', 'Instalador de Apps Softaculous', 'Dominio Gratis primer año*',],
     },
     {
       title: 'Hosting',
       titletwo: 'Enterprise',
       price: '$1,219 ',
       setup: '',
-      features: ['35GB de Almacenamiento', 'Transferencia ilimitada', 'Cuentas de Correo ilimitadas', 'Certificado SSL','Bases de datos ilimitadas','Cuentas FTP ilimitadas','Soporta 10 Dominios Adicionales','Respaldo JetBackup 5','Instalador de Apps Softaculous','Dominio Gratis primer año*'],
+      features: ['35GB de Almacenamiento SSD', 'Transferencia ilimitada', 'Cuentas de Correo ilimitadas', 'Certificado SSL','Bases de datos ilimitadas','Cuentas FTP ilimitadas','Soporta 10 Dominios Adicionales','Respaldo JetBackup 5','Instalador de Apps Softaculous','Dominio Gratis primer año*'],
     },
   ],
 
@@ -247,7 +247,7 @@ export const solucionesData: SolucionesData = {
       titletwo: 'VPS 04',
       price: '$1,040  ',
       setup: '',
-      features: ['4CPU Core','8GB de RAM','160GB SSD Disco','5TB de Transferencia','40Gbps Network In','4000Mbps Network Out','Soporte Técnico',],
+      features: ['4CPU Core','8GB de RAM','160GB SSD Disco','5TB de Transferencia','40Gbps Network In','5000Mbps Network Out','Soporte Técnico',],
     },
 
   ],
