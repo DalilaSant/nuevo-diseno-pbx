@@ -61,7 +61,7 @@ export const benefitsTelefonia: BenefitsBarData = {
 }
 
 export const benefitsSMS: BenefitsBarData = {
-  benefits:[
+  benefits: [
     {
       icono: 'img/soluciones/ICONO_10_SECCIO_3.png',
       titulo: 'Entregabilidad\ngarantizada.',
@@ -87,57 +87,57 @@ export const benefitsSMS: BenefitsBarData = {
       titulo: 'Interacción \n Instantánea.',
       subtitulo: '',
     },
-  ]
+  ],
 }
 
 export const benefitsSMSDos: BenefitsBarData = {
-  benefits:[
+  benefits: [
     {
-      icono:'img/soluciones/ICONO_18_SECCIO_3.png',
+      icono: 'img/soluciones/ICONO_18_SECCIO_3.png',
       titulo: 'Segmentación \n efectiva.',
       subtitulo: '',
     },
     {
-      icono:'img/soluciones/ICONO_17_SECCIO_3.png',
+      icono: 'img/soluciones/ICONO_17_SECCIO_3.png',
       titulo: 'Automatización\n de proceso.',
       subtitulo: '',
     },
     {
-      icono:'img/soluciones/ICONO_16_SECCIO_3.png',
+      icono: 'img/soluciones/ICONO_16_SECCIO_3.png',
       titulo: 'Sin conexión \na internet.',
       subtitulo: '',
     },
     {
-      icono:'img/soluciones/ICONO_15_SECCIO_3.png',
+      icono: 'img/soluciones/ICONO_15_SECCIO_3.png',
       titulo: 'Estadísticas \nen tiempo real.',
       subtitulo: '',
     },
-  ]
+  ],
 }
 
 export const benefitsWhatsapp: BenefitsBarData = {
-  benefits:[
+  benefits: [
     {
       icono: 'img/soluciones/ICONO_11_SECCIO_4.png',
       titulo: 'Segmenta tu \nbase de datos.',
-      subtitulo: ''
+      subtitulo: '',
     },
     {
       icono: 'img/soluciones/ICONO_9_SECCIO_4.png',
       titulo: 'Envía campañas \nal instante.',
-      subtitulo: ''
+      subtitulo: '',
     },
     {
       icono: 'img/soluciones/ICONO_12_SECCIO_4.png',
       titulo: 'Analiza resultados \nen tiempo real.',
-      subtitulo: ''
+      subtitulo: '',
     },
     {
       icono: 'img/soluciones/ICONO_10_SECCIO_4.png',
       titulo: 'Monitorea cada \ninteracción.',
-      subtitulo: ''
+      subtitulo: '',
     },
-  ]
+  ],
 }
 
 export const benefitsAgenteIA: BenefitsBarData = {
@@ -145,24 +145,24 @@ export const benefitsAgenteIA: BenefitsBarData = {
     {
       icono: 'img/soluciones/ICONO_2_SECCIO_5.png',
       titulo: 'Monitorea \ninteracciones.',
-      subtitulo: ''
+      subtitulo: '',
     },
     {
       icono: 'img/soluciones/ICONO_3_SECCIO_5.png',
       titulo: 'Filtrado y \ntransferencia.',
-      subtitulo: ''
+      subtitulo: '',
     },
     {
       icono: 'img/soluciones/ICONO_4_SECCIO_5.png',
       titulo: 'Reducción de \ncarga operativa.',
-      subtitulo: ''
+      subtitulo: '',
     },
     {
       icono: 'img/soluciones/ICONO_5_SECCIO_5.png',
       titulo: 'Reportes \ninteligentes.',
-      subtitulo: ''
+      subtitulo: '',
     },
-  ]
+  ],
 }
 
 export const benefitsInfraestructura: BenefitsBarData = {
@@ -192,7 +192,30 @@ export const benefitsInfraestructura: BenefitsBarData = {
       titulo: 'Instalación \nWordPress.',
       subtitulo: '',
     },
+  ],
+}
 
-  ]
-
+export const benefitsRecursos: BenefitsBarData = {
+  benefits: [
+    {
+      icono: 'img/recursos/ICONO_4_SECCIO_8.png',
+      titulo: 'Contenido \nactualizado.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/recursos/ICONO_5_SECCIO_8.png',
+      titulo: 'Guías \nprácticas.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/recursos/ICONO_6_SECCIO_8.png',
+      titulo: 'Recursos \ngratuitos.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/recursos/ICONO_7_SECCIO_8.png',
+      titulo: 'Información \nespecializada.',
+      subtitulo: '',
+    },
+  ],
 }

@@ -8,11 +8,13 @@ const props = withDefaults(
     reverse?: boolean;
     lineHeight?: string;
     marginBottom?: string;
+    texto?:string
   }>(),
   {
     reverse: false,
     lineHeight: 'lh-sm',
-    marginBottom: 'mb-4'
+    marginBottom: 'mb-4',
+    texto: 'Cotizar',
   }
 )
 
@@ -62,7 +64,7 @@ const props = withDefaults(
 
           <!-- Botón de Acción -->
           <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
-            <BaseButton texto="Cotizar" :mostrarIcono="true" :enlace="banner.enlace" roundedClass="rounded-1 py-2 px-4 fs-6" />
+            <BaseButton :texto="texto" :mostrarIcono="true" :enlace="banner.enlace" roundedClass="rounded-1 py-2 px-4 fs-6" />
           </div>
         </div>
       </div>

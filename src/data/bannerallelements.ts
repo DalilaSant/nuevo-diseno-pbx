@@ -121,3 +121,15 @@ export const bannerAgenteIA: BannerAllData = {
     }
   ]
 }
+
+export const bannerRecursos: BannerAllData = {
+  dataBanner: [
+    {
+      image:'/img/recursos/IMAGEN_1_SECCION_8.png',
+      title: 'Recursos para tomar ',
+      titleRed: 'mejores decisiones.',
+      description: 'Encuentra artículos, guías y contenido para comprender las tecnologías que impulsan la comunicación empresarial.',
+      enlace: '',
+    }
+  ]
+}
