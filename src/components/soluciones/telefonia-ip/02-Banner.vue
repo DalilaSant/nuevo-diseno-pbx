@@ -4,7 +4,7 @@ import {bannerTelefoniaIP} from '@/data/bannerallelements';
 </script>
 
 <template>
-  <section class="solutions-features-section py-5">
+  <section class="solutions-features-section py-5" id="telefonia-ip">
     <BannerAllElements :items="bannerTelefoniaIP.dataBanner" />
   </section>
 </template>

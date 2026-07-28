@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import NotFoundView from '@/views/NotFoundView.vue'
 
-
 export const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -19,26 +18,25 @@ export const routes: RouteRecordRaw[] = [
     path: '/soluciones-sms-masivo',
     name: 'soluciones-sms-masivo',
     component: () => import('@/views/soluciones/SmsMasivoView.vue'),
-    meta: { title: 'PBX Hosting | Soluciones SMS Masivo'}
-
+    meta: { title: 'PBX Hosting | Soluciones SMS Masivo' },
   },
   {
     path: '/soluciones-whatsapp-masivo',
     name: 'soluciones-whatsapp-masivo',
     component: () => import('@/views/soluciones/WhatsappMasivoView.vue'),
-    meta: { title: 'PBX Hosting | Soluciones WhatsApp Masivo'}
+    meta: { title: 'PBX Hosting | Soluciones WhatsApp Masivo' },
   },
   {
     path: '/soluciones-agenteia',
     name: 'soluciones-agenteia',
     component: () => import('@/views/soluciones/AgenteIAView.vue'),
-    meta: { title: 'PBX Hosting | Soluciones Agente IA'}
+    meta: { title: 'PBX Hosting | Soluciones Agente IA' },
   },
   {
     path: '/infraestructura-web',
     name: 'infraestructura-web',
     component: () => import('@/views/soluciones/InfraestructuraView.vue'),
-    meta: {title: 'PBX Hosting | Infraestructura Web'}
+    meta: { title: 'PBX Hosting | Infraestructura Web' },
   },
   {
     path: '/numeracion',
@@ -64,20 +62,49 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('@/views/ContactoView.vue'),
     meta: { title: 'PBX Hosting | Contacto' },
   },
-    //ERROR 404
+  //ERROR 404
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: NotFoundView,
-    meta: { title: 'PBX Hosting | Página no encontrada' }
-  }
-
-
+    meta: { title: 'PBX Hosting | Página no encontrada' },
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Si la ruta destino contiene un hash (#mensajes-rss), nos desplazamos a ese elemento
+    if (to.hash) {
+      return new Promise((resolve) => {
+        //revisamos repetidamente cada 100ms si el elemento ya apareció en el DOM
+        const checkExist = setInterval(() => {
+          const element = document.querySelector(to.hash)
+          if (element) {
+            clearInterval(checkExist) //paramos la búsqueda
+            resolve({
+              el: to.hash,
+              top: 80,
+              behavior: 'smooth', // Animación de scroll suave
+            })
+          }
+        }, 100)
+
+        //salvaguarda: si tras los 5 segundo no aparece, detenemos el reloj
+        setTimeout(() => {
+          clearInterval(checkExist)
+          resolve(false)
+        }, 5000)
+      })
+    }
+    // Si regresamos atrás con las flechas del navegador, recordamos la posición anterior
+    if (savedPosition) {
+      return savedPosition
+    }
+    // Por defecto, mandamos la pantalla al inicio de la página
+    return { top: 0 }
+  },
 })
 
 // Guardia global para actualizar dinámicamente el título de la pestaña del navegador

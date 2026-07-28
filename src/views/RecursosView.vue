@@ -5,6 +5,7 @@ import LoaderComponent from '@/components/LoaderComponent.vue'
 import Banner01 from '@/components/recursos/01-Banner.vue'
 import Section02 from '@/components/recursos/02-Banner.vue'
 import Section03 from '@/components/recursos/03-Section.vue'
+import Banner04 from '@/components/recursos/04-Banner.vue'
 
 const loading = ref(true)
 onMounted(() => {
@@ -23,6 +24,7 @@ onMounted(() => {
     <Banner01/>
     <Section02/>
     <Section03/>
+    <Banner04/>
 
   </div>
 </template>

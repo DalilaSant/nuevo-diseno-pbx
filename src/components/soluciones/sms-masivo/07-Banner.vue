@@ -4,7 +4,7 @@ import { bannerSMSMasivoTres } from '@/data/bannerallelements'
 </script>
 
 <template>
-  <section class="solutions-features-section py-5 py-lg-4">
+  <section class="solutions-features-section py-5 py-lg-4" id="mensajes-rss">
     <BannerAllElements :items="bannerSMSMasivoTres.dataBanner" lineHeight="lh-1"  reverse>
        <!-- Inyectamos la imagen flotante con animación en el slot -->
       <template #image-overlay>

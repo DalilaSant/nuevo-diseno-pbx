@@ -7,7 +7,7 @@ import { benefitsRecursos } from '@/data/benefits-bar';
 
 <template>
   <section class="solutions-features-section pt-4 pb-4 pt-lg-5 pb-lg-4 ">
-    <BannerAllElements :items="bannerRecursos.dataBanner" class="recursos-custom-banner"  texto="Explorar recursos"  marginBottom="mb-lg-3"/>
+    <BannerAllElements :items="bannerRecursos.dataBanner" class="recursos-custom-banner"  texto="Explorar recursos"  marginBottom="mb-lg-3" :animarImagen="true" :animarTexto="true"/>
 
     <BenefitsBar class="pt-4 benefits-hidden-medium" :items = "benefitsRecursos.benefits" />
 

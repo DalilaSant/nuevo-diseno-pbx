@@ -129,7 +129,7 @@ export const bannerRecursos: BannerAllData = {
       title: 'Recursos para tomar ',
       titleRed: 'mejores decisiones.',
       description: 'Encuentra artículos, guías y contenido para comprender las tecnologías que impulsan la comunicación empresarial.',
-      enlace: '',
+      enlace: '#guias-esenciales',
     }
   ]
 }

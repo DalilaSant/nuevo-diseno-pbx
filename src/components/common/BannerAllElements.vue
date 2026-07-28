@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type {BannerItem} from '@/interfaces/BannerAllElements'
+import type { BannerItem } from '@/interfaces/BannerAllElements'
 import BaseButton from '@/components/common/BaseButton.vue';
 
 const props = withDefaults(
@@ -8,7 +8,9 @@ const props = withDefaults(
     reverse?: boolean;
     lineHeight?: string;
     marginBottom?: string;
-    texto?:string
+    texto?: string;
+    animarImagen?: boolean;
+    animarTexto?: boolean;
   }>(),
   {
     reverse: false,
@@ -22,22 +24,29 @@ const props = withDefaults(
 <template>
   <div class="container py-lg-3">
     <!-- Fila principal: Se invierte en móvil para que la imagen quede arriba si es necesario, o se mantiene -->
-    <div v-for="(banner, index) in items" :key="index" :class="['row align-items-center g-4 g-lg-5', {'flex-row-reverse': reverse}]">
+    <div v-for="(banner, index) in items" :key="index"
+      :class="['row align-items-center g-4 g-lg-5', { 'flex-row-reverse': reverse }]">
 
       <!-- Lado Izquierdo: Imagen -->
       <div class="col-lg-6 col-12 text-center text-lg-start order-2 order-lg-1">
-        <div class="image-wrapper position-relative ">
-          <img :src="banner.image" alt="Telefonía IP eficiente"
-            class="img-fluid  solutions-featured-img" />
-            <!-- Ranura (Slot) reservada para la imagen flotante -->
-            <slot name="image-overlay"></slot>
+        <div v-if="animarImagen" v-motion-slide-left :delay="200" :duration="1200"
+          class="image-wrapper position-relative ">
+          <img :src="banner.image" alt="Telefonía IP eficiente" class="img-fluid  solutions-featured-img" />
+          <!-- Ranura (Slot) reservada para la imagen flotante -->
+          <slot name="image-overlay"></slot>
         </div>
-        
+        <div v-else class="image-wrapper position-relative">
+          <img :src="banner.image" alt="Telefonía IP eficiente" class="img-fluid  solutions-featured-img" />
+          <!-- Ranura (Slot) reservada para la imagen flotante -->
+          <slot name="image-overlay"></slot>
+
+        </div>
+
       </div>
 
       <!-- Lado Derecho: Textos y Beneficios -->
-      <div :class="['col-lg-6 col-12  text-center text-lg-start order-1 order-lg-2',{'px-lg-0': !reverse}]">
-        <div class="text-content-wrapper">
+      <div :class="['col-lg-6 col-12  text-center text-lg-start order-1 order-lg-2', { 'px-lg-0': !reverse }]">
+        <div v-if="animarTexto" v-motion-slide-right :delay="200" :duration="1200" class="text-content-wrapper">
           <!-- Línea decorativa roja -->
           <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
 
@@ -53,8 +62,10 @@ const props = withDefaults(
           </p>
 
           <!-- Listado de Checks -->
-          <div :class="['features-list d-flex flex-column gap-3 align-items-center align-items-lg-start', marginBottom]">
-            <div v-for="(subItem, subIndex) in banner.item" :key="subIndex" class="feature-item d-flex align-items-center gap-2">
+          <div
+            :class="['features-list d-flex flex-column gap-3 align-items-center align-items-lg-start', marginBottom]">
+            <div v-for="(subItem, subIndex) in banner.item" :key="subIndex"
+              class="feature-item d-flex align-items-center gap-2">
               <i class="fa-regular fa-circle-check check-icon"></i>
               <span class="feature-text fw-semibold text-dark">
                 {{ subItem.text }}
@@ -64,7 +75,42 @@ const props = withDefaults(
 
           <!-- Botón de Acción -->
           <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
-            <BaseButton :texto="texto" :mostrarIcono="true" :enlace="banner.enlace" roundedClass="rounded-1 py-2 px-4 fs-6" />
+            <BaseButton :texto="texto" :mostrarIcono="true" :enlace="banner.enlace"
+              roundedClass="rounded-1 py-2 px-4 fs-6" />
+          </div>
+        </div>
+
+        <div v-else class="text-content-wrapper">
+          <!-- Línea decorativa roja -->
+          <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
+
+          <!-- Título Principal -->
+          <h2 :class="['featured-title fw-semibold mb-3 mb-lg-1 text-dark', lineHeight]">
+            {{ banner.title }} <br>
+            <span class="text-red">{{ banner.titleRed }}</span>
+          </h2>
+
+          <!-- Descripción -->
+          <p class="featured-desc mb-3 mb-lg-2 ">
+            {{ banner.description }}<span class="fw-semibold">{{ banner.descriptionDark }}</span>
+          </p>
+
+          <!-- Listado de Checks -->
+          <div
+            :class="['features-list d-flex flex-column gap-3 align-items-center align-items-lg-start', marginBottom]">
+            <div v-for="(subItem, subIndex) in banner.item" :key="subIndex"
+              class="feature-item d-flex align-items-center gap-2">
+              <i class="fa-regular fa-circle-check check-icon"></i>
+              <span class="feature-text fw-semibold text-dark">
+                {{ subItem.text }}
+              </span>
+            </div>
+          </div>
+
+          <!-- Botón de Acción -->
+          <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
+            <BaseButton :texto="texto" :mostrarIcono="true" :enlace="banner.enlace"
+              roundedClass="rounded-1 py-2 px-4 fs-6" />
           </div>
         </div>
       </div>
@@ -159,6 +205,7 @@ const props = withDefaults(
   .feature-text {
     font-size: 0.95rem;
   }
+
   :deep(.btn) {
     font-size: 0.85rem !important;
     padding: 8px 16px !important;
@@ -180,14 +227,15 @@ const props = withDefaults(
     font-size: 1rem;
     margin: 0 auto 1.5rem auto;
   }
+
   .solutions-featured-img {
     max-height: 300px;
     margin-bottom: 0rem;
   }
 
   .feature-text {
-  font-size: .98rem;
-}
+    font-size: .98rem;
+  }
 
 }
 </style>

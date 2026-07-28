@@ -78,9 +78,9 @@ const closeBento = () => {
 </script>
 
 <template>
-  <section class="banner-section py-lg-5 py-0" style="background-color: #ffffff;">
+  <section class="banner-section py-lg-5 py-0" style="background-color: #ffffff;" id="guias-esenciales">
     <div class="container">
-      <div class="text-start pt-lg-5 pt-5 mb-5" v-motion-fade-visible :delay="200" :duration="1000">
+      <div class="text-start pt-lg-5 pt-5 mb-5"  v-motion-fade-visible :delay="200" :duration="1000">
         <SectionTitleTwo display-font="display-5" marginBotton="mb-0">
           Guías esenciales.
         </SectionTitleTwo>
@@ -98,15 +98,19 @@ const closeBento = () => {
         <div class="row g-4">
           <!-- Tarjeta 1 (DID) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger border-0 bg-white text-start position-relative overflow-hidden d-flex flex-column p-xl-4  py-2 h-100 ">
-              <div class="row justify-content-center align-items-center h-100">
-                <div class="col-xl-3 col-lg-4 col-lg-4 col-md-4 col-5 text-center">
-                  <img src="/img/recursos/RECURSO_1_SECCIO_8.png" alt="DID" class="img-fluid img-bento">
+            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
+                  <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
+                    <img src="/img/recursos/RECURSO_1_SECCIO_8.png" alt="DID" class="img-fluid">
+                  </div>
                 </div>
-                <div class="col-xl-9 col-lg-8 col-lg-8 col-md-8 col-7 ps-0 pe-4">
+                <div class="col-xl-9 col-lg-8 col-md-8 col-7 ps-0 pe-3">
                   <h3 class="text-parrafo fw-semibold text-dark mb-1">¿Qué es un DID?</h3>
-                  <p class=" small mb-0  mb-lg-2">Comprende cómo funcionan los números telefónicos virtuales.</p>
-                  <button class="btn px-0 text-primary fw-semibold" @click="openBento($event, 'did')">Leer guía</button>
+                  <p class="small text-muted mb-1">Comprende cómo funcionan los números telefónicos virtuales.</p>
+                  <button class="btn px-0 text-primary fw-semibold btn-read-guide" @click="openBento($event, 'did')">
+                    Leer guía <i class="fa-solid fa-chevron-right ms-1"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -114,15 +118,19 @@ const closeBento = () => {
 
           <!-- Tarjeta 2 (RCS) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger border-0 bg-white text-start position-relative overflow-hidden d-flex flex-column p-xl-4  py-2 h-100">
-              <div class="row justify-content-center align-items-center h-100">
-                <div class="col-xl-3 col-lg-4 col-lg-4 col-md-4 col-5 text-center">
-                  <img src="/img/recursos/RECURSO_4_SECCIO_8.png" alt="RCS" class="img-fluid img-bento">
+            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
+                  <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
+                    <img src="/img/recursos/RECURSO_4_SECCIO_8.png" alt="RCS" class="img-fluid">
+                  </div>
                 </div>
-                <div class="col-xl-9 col-lg-8 col-lg-8 col-md-8 col-7 ps-0 pe-4">
+                <div class="col-xl-9 col-lg-8 col-md-8 col-7 ps-0 pe-3">
                   <h3 class="text-parrafo fw-semibold text-dark mb-1">¿Qué es RCS?</h3>
-                  <p class=" small mb-0 mb-lg-2">Cómo los RCS crean experiencias de mensajería <br class="d-none d-lg-block"> interactiva.</p>
-                  <button class="btn px-0 text-primary fw-semibold" @click="openBento($event, 'rcs')">Leer guía</button>
+                  <p class="small text-muted mb-1">Cómo los RCS crean experiencias de mensajería interactiva.</p>
+                  <button class="btn px-0 text-primary fw-semibold btn-read-guide" @click="openBento($event, 'rcs')">
+                    Leer guía <i class="fa-solid fa-chevron-right ms-1"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -135,15 +143,19 @@ const closeBento = () => {
         <div class="row g-4">
           <!-- Tarjeta 3 (SIP) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger border-0 bg-white text-start position-relative overflow-hidden d-flex flex-column p-xl-4  py-2 h-100">
-              <div class="row justify-content-center align-items-center h-100">
-                <div class="col-xl-3 col-lg-4 col-lg-4 col-md-4 col-5 text-center">
-                  <img src="/img/recursos/RECURSO_2_SECCIO_8.png" alt="SIP" class="img-fluid img-bento">
+            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
+                  <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
+                    <img src="/img/recursos/RECURSO_2_SECCIO_8.png" alt="SIP" class="img-fluid">
+                  </div>
                 </div>
-                <div class="col-xl-9 col-lg-8 col-lg-8 col-md-8 col-7 ps-0 pe-4">
+                <div class="col-xl-9 col-lg-8 col-md-8 col-7 ps-0 pe-3">
                   <h3 class="text-parrafo fw-semibold text-dark mb-1">¿Qué es una troncal SIP?</h3>
-                  <p class=" small mb-0 mb-lg-2">Conoce cómo una Troncal SIP conecta tu empresa <br class="d-none d-lg-block"> con la red.</p>
-                  <button class="btn px-0 text-primary fw-semibold" @click="openBento($event, 'sip')">Leer guía</button>
+                  <p class="small text-muted mb-1">Conoce cómo una Troncal SIP conecta tu empresa con la red.</p>
+                  <button class="btn px-0 text-primary fw-semibold btn-read-guide" @click="openBento($event, 'sip')">
+                    Leer guía <i class="fa-solid fa-chevron-right ms-1"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -151,15 +163,19 @@ const closeBento = () => {
 
           <!-- Tarjeta 4 (Proveedor) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger border-0 bg-white text-start position-relative overflow-hidden d-flex flex-column p-xl-4  py-2 h-100">
-              <div class="row justify-content-center align-items-center h-100">
-                <div class="col-xl-3 col-lg-4 col-lg-4 col-md-4 col-5 text-center">
-                  <img src="/img/recursos/RECURSO_3_SECCIO_8.png" alt="Proveedor" class="img-fluid img-bento">
+            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+              <div class="row align-items-center h-100">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
+                  <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
+                    <img src="/img/recursos/RECURSO_3_SECCIO_8.png" alt="Proveedor" class="img-fluid">
+                  </div>
                 </div>
-                <div class="col-xl-9 col-lg-8 col-lg-8 col-md-8 col-7 ps-0 pe-4">
+                <div class="col-xl-9 col-lg-8 col-md-8 col-7 ps-0 pe-3">
                   <h3 class="text-parrafo fw-semibold text-dark mb-1">Elegir un proveedor de Telefonía IP</h3>
-                  <p class=" small mb-0 mb-lg-2">Identifica los aspectos para seleccionar un proveedor confiable.</p>
-                  <button class="btn px-0 text-primary fw-semibold" @click="openBento($event, 'proveedor')">Leer guía</button>
+                  <p class="small text-muted mb-1">Identifica los aspectos para seleccionar un proveedor confiable.</p>
+                  <button class="btn px-0 text-primary fw-semibold btn-read-guide" @click="openBento($event, 'proveedor')">
+                    Leer guía <i class="fa-solid fa-chevron-right ms-1"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -265,10 +281,9 @@ const closeBento = () => {
                   </div>
                 </div>
 
-                
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-sms-masivo#mensajes-rss" roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -316,7 +331,7 @@ const closeBento = () => {
                 
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-telefonia-ip#troncal-sip" roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -329,15 +344,15 @@ const closeBento = () => {
                 <img src="/img/recursos/IMAGEN_6_SECCION_8.png" class="img-fluid w-100 modal-main-img" alt="Proveedor">
               </div>
               <div class="col-lg-6 col-12">
-                <h2 class="mb-1 fw-semibold text-dark fs-1">Elegir un proveedor de  <span class="text-red">Telefonía IP</span></h2>
-                <p class="parrafo_card text-dark fw-semibold mb-3 ">
-                 Antes de contratar, verifica la calidad de la infraestructura, soporte técnico, escalabilidad y disponibilidad de la red. 
+                <h2 class="mb-1 fw-semibold text-dark fs-1">Elegir un proveedor de <span class="text-red">Telefonía IP</span></h2>
+                <p class="parrafo_card text-dark fw-semibold mb-3">
+                  Antes de contratar, verifica la calidad de la infraestructura, soporte técnico, escalabilidad y disponibilidad de la red. 
                 </p>
-                <p class="parrafo_card text-dark fw-semibold mb-3 ">Elegir una plataforma confiable garantiza una comunicación estable, crecimiento a largo plazo y una mejor experiencia para tus clientes y colaboradores.</p>
+                <p class="parrafo_card text-dark fw-semibold mb-3">Elegir una plataforma confiable garantiza una comunicación estable, crecimiento a largo plazo y una mejor experiencia para tus clientes y colaboradores.</p>
                 
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-telefonia-ip#telefonia-ip" roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -359,13 +374,48 @@ const closeBento = () => {
 /* Tarjetas Bento */
 .bento-trigger {
   border-radius: 20px;
-  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.15), 0 8px 16px -8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.08); /* Borde suave idéntico a la maquetación */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* Sombra suave para que no se vea tan tosco */
   transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .bento-trigger:hover {
   transform: translateY(-5px);
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.2), 0 18px 36px -18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* Contenedor gris del icono de la maquetación */
+.icon-box {
+  background-color: #f3f6f9; /* Fondo gris claro */
+  border-radius: 12px;
+  width: 90px;
+  height: 90px;
+  transition: background-color 0.25s ease;
+}
+
+.bento-trigger:hover .icon-box {
+  background-color: #e9ecef; /* Feedback de hover en el cuadro del icono */
+}
+
+
+.btn-read-guide {
+  font-size: 0.95rem;
+  color: #0d6efd;
+  transition: color 0.2s ease;
+  
+}
+
+.btn-read-guide:hover {
+  color: #0056b3;
+}
+
+.btn-read-guide:focus,
+.btn-read-guide:active,
+.btn-read-guide:focus-visible,
+.btn-read-guide:active:focus {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: transparent !important;
 }
 
 /* El "Modal" que se expande */
@@ -465,13 +515,14 @@ const closeBento = () => {
   line-height: 1.6;
 }
 
-.text-parrafo{
-    font-size: 1.25rem;
-}
 .modal-detail-text p {
   font-size: 1.05rem;
   line-height: 1.6;
   color: #4a5568;
+}
+
+.text-parrafo{
+    font-size: 1.25rem;
 }
 
 /************** */
@@ -480,6 +531,18 @@ const closeBento = () => {
   background-color: #ffffff;
 }
 
+/* Reglas Responsivas para el Modal */
+@media (max-width: 991.98px) {
+  .bento-content-expanded.active {
+    width: 90% !important;
+    height: 80% !important;
+    padding: 30px;
+  }
+  
+  .modal-main-img {
+    max-height: 220px;
+  }
+}
 
 @media (max-width: 575.98px) {
   .bento-content-expanded.active {
@@ -501,17 +564,12 @@ const closeBento = () => {
     right: 12px;
   }
 
-  .img-bento{
-    width: 75%;
-  }
-
   .text-parrafo{
     font-size: 1rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 800px){
-
   .bento-trigger{
     width: 75%;
     margin: 0 auto;
@@ -519,47 +577,6 @@ const closeBento = () => {
   .text-parrafo{
     font-size: 1.2rem;
   }
-  .img-bento{
-    width: 75%;
-  }
-}
-
-/* Reglas Responsivas para el Modal */
-@media (max-width: 991.98px) {
-  .bento-content-expanded.active {
-    width: 90% !important;
-    height: 80% !important;
-    padding: 30px;
-  }
-  
-  .img-bento{
-    width: 75%;
-  }
-  .modal-main-img {
-    max-height: 220px;
-  }
-}
-
-@media (max-width: 768px) {
-  .benefits-bar {
-    grid-template-columns: 1fr;
-    gap: 20px !important;
-    padding: 24px 20px !important;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .benefits-bar>div:not(.vertical-divider) {
-    justify-content: flex-start !important;
-    padding-left: 35px;
-  }
-
-  .benefits-bar>div:last-child {
-    grid-column: span 1;
-    justify-content: flex-start !important;
-    padding-left: 35px;
-  }
-
 }
 
 @media (max-width: 991px) {
@@ -592,13 +609,11 @@ const closeBento = () => {
 }
 
 @media (min-width:1022px) and (max-width: 1279px) {
-  .img-bento{
-    width:85%;
-  }
   .text-parrafo{
     font-size: 1.25rem;
   }
 }
+
 @media (min-width: 1280px) and (max-width: 1366px) {
   .featured-desc {
     font-size: .95rem;
@@ -606,11 +621,5 @@ const closeBento = () => {
   .text-parrafo{
     font-size: 1.3rem;
   }
-  .img-bento{
-    width:100%;
-  }
 }
-
-
-
 </style>
