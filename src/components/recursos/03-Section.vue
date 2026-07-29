@@ -33,7 +33,7 @@ const openBento = (event: MouseEvent, contentId: string) => {
     height: `${rect.height}px`,
     transition: 'none'
   }
-  
+
   activeCardId.value = contentId
   isOverlayActive.value = true
   isExpandedActive.value = true
@@ -80,7 +80,7 @@ const closeBento = () => {
 <template>
   <section class="banner-section py-lg-5 py-0" style="background-color: #ffffff;" id="guias-esenciales">
     <div class="container">
-      <div class="text-start pt-lg-5 pt-5 mb-5"  v-motion-fade-visible :delay="200" :duration="1000">
+      <div class="text-start pt-lg-5 pt-5 mb-5" v-motion-fade-visible :delay="200" :duration="1000">
         <SectionTitleTwo display-font="display-5" marginBotton="mb-0">
           Guías esenciales.
         </SectionTitleTwo>
@@ -89,16 +89,17 @@ const closeBento = () => {
         </p>
       </div>
     </div>
-    
+
     <!-- Bloque de Bento Grids usando el sistema de rejilla nativo de Bootstrap -->
     <div class="position-relative">
-      
+
       <!-- Fila 1 de Guías -->
       <div class="container mb-4">
         <div class="row g-4">
           <!-- Tarjeta 1 (DID) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+            <div
+              class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
               <div class="row align-items-center h-100">
                 <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
                   <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
@@ -118,7 +119,8 @@ const closeBento = () => {
 
           <!-- Tarjeta 2 (RCS) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+            <div
+              class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
               <div class="row align-items-center h-100">
                 <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
                   <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
@@ -143,7 +145,8 @@ const closeBento = () => {
         <div class="row g-4">
           <!-- Tarjeta 3 (SIP) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+            <div
+              class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
               <div class="row align-items-center h-100">
                 <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
                   <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
@@ -163,7 +166,8 @@ const closeBento = () => {
 
           <!-- Tarjeta 4 (Proveedor) -->
           <div class="col-lg-6 col-12">
-            <div class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
+            <div
+              class="bento-trigger bg-white text-start position-relative overflow-hidden d-flex flex-column p-3 h-100">
               <div class="row align-items-center h-100">
                 <div class="col-xl-3 col-lg-4 col-md-4 col-5 text-center">
                   <div class="icon-box d-flex align-items-center justify-content-center mx-auto">
@@ -173,7 +177,8 @@ const closeBento = () => {
                 <div class="col-xl-9 col-lg-8 col-md-8 col-7 ps-0 pe-3">
                   <h3 class="text-parrafo fw-semibold text-dark mb-1">Elegir un proveedor de Telefonía IP</h3>
                   <p class="small text-muted mb-1">Identifica los aspectos para seleccionar un proveedor confiable.</p>
-                  <button class="btn px-0 text-primary fw-semibold btn-read-guide" @click="openBento($event, 'proveedor')">
+                  <button class="btn px-0 text-primary fw-semibold btn-read-guide"
+                    @click="openBento($event, 'proveedor')">
                     Leer guía <i class="fa-solid fa-chevron-right ms-1"></i>
                   </button>
                 </div>
@@ -187,24 +192,21 @@ const closeBento = () => {
       <div class="bento-modal-overlay" :class="{ 'active': isOverlayActive }" @click="closeBento"></div>
 
       <!-- ÚNICO Contenedor del Modal Dinámico -->
-      <div 
-        class="bento-content-expanded" 
-        :class="{ 'active': isExpandedActive }" 
-        :style="expandedStyles"
-      >
+      <div class="bento-content-expanded" :class="{ 'active': isExpandedActive }" :style="expandedStyles">
         <button class="close-btn" @click="closeBento">✕</button>
         <div class="expanded-inner h-100">
-          
+
           <!-- Contenido: ¿Qué es un DID? -->
           <div v-if="activeCardId === 'did'" class="h-100 d-flex align-items-center">
             <div class="row align-items-center w-100 py-3 py-lg-0">
               <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
-                <img src="/img/recursos/IMAGEN_3_SECCION_8.png" class="img-fluid w-100 modal-main-img" alt="DID">
+                <img src="/img/recursos/IMAGEN_3_SECCION_8.png" class="img-fluid w-100 modal-main-img d-none d-lg-block" alt="DID">
               </div>
               <div class="col-lg-6 col-12">
                 <h2 class="mb-1 fw-semibold text-dark fs-1">¿Qué es un <span class="text-red">DID?</span></h2>
                 <p class="parrafo_card text-dark fw-semibold mb-3">
-                  Un DID (Direct Inward Dialing) es un número telefónico virtual que permite recibir llamadas directamente hacia una extensión o usuario, sin necesidad de una línea física.
+                  Un DID (Direct Inward Dialing) es un número telefónico virtual que permite recibir llamadas
+                  directamente hacia una extensión o usuario, sin necesidad de una línea física.
                 </p>
                 <div class="d-flex flex-column gap-3 mb-3 align-items-start">
                   <!-- Item 1 -->
@@ -233,12 +235,14 @@ const closeBento = () => {
                 </div>
 
                 <p class="parrafo_card text-dark fw-semibold mb-3">
-                  Una solución utilizada por empresas que requieren administrar múltiples números desde una sola plataforma.
+                  Una solución utilizada por empresas que requieren administrar múltiples números desde una sola
+                  plataforma.
                 </p>
 
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="#" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="#"
+                    roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -248,12 +252,13 @@ const closeBento = () => {
           <div v-else-if="activeCardId === 'rcs'" class="h-100 d-flex align-items-center">
             <div class="row align-items-center w-100 py-3 py-lg-0">
               <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
-                <img src="/img/recursos/IMAGEN_4_SECCION_8.png" class="img-fluid w-100 modal-main-img" alt="RCS">
+                <img src="/img/recursos/IMAGEN_4_SECCION_8.png" class="img-fluid w-100 modal-main-img d-none d-lg-block" alt="RCS">
               </div>
               <div class="col-lg-6 col-12">
                 <h2 class="mb-1 fw-semibold text-dark fs-1">¿Qué es un <span class="text-red">RCS?</span></h2>
                 <p class="parrafo_card text-dark fw-semibold mb-2">
-                  Un RCS Permite enviar mensajes enriquecidos con imágenes, botones, archivos, carruseles, ubicación y otros elementos interactivos desde una marca verificada. <br> <br> Utilizados comúnmente para:
+                  Un RCS Permite enviar mensajes enriquecidos con imágenes, botones, archivos, carruseles, ubicación y
+                  otros elementos interactivos desde una marca verificada. <br> <br> Utilizados comúnmente para:
                 </p>
                 <div class="d-flex flex-column gap-3 mb-4 align-items-start">
                   <!-- Item 1 -->
@@ -283,7 +288,8 @@ const closeBento = () => {
 
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-sms-masivo#mensajes-rss" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-sms-masivo#mensajes-rss"
+                    roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -293,12 +299,13 @@ const closeBento = () => {
           <div v-else-if="activeCardId === 'sip'" class="h-100 d-flex align-items-center">
             <div class="row align-items-center w-100 py-3 py-lg-0">
               <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
-                <img src="/img/recursos/IMAGEN_5_SECCION_8.png" class="img-fluid w-100 modal-main-img" alt="SIP">
+                <img src="/img/recursos/IMAGEN_5_SECCION_8.png" class="img-fluid w-100 modal-main-img d-none d-lg-block" alt="SIP">
               </div>
               <div class="col-lg-6 col-12">
                 <h2 class="mb-1 fw-semibold text-dark fs-1">¿Qué es una <span class="text-red">Troncal SIP?</span></h2>
                 <p class="parrafo_card text-dark fw-semibold mb-3">
-                  Una Troncal SIP es el servicio que conecta tu conmutador telefónico con la red, eliminando la necesidad de líneas telefónicas tradicionales.
+                  Una Troncal SIP es el servicio que conecta tu conmutador telefónico con la red, eliminando la
+                  necesidad de líneas telefónicas tradicionales.
                 </p>
                 <div class="d-flex flex-column gap-3 mb-3 align-items-start">
                   <!-- Item 1 -->
@@ -328,10 +335,11 @@ const closeBento = () => {
                 <p class="parrafo_card text-dark fw-semibold mb-3">
                   Es una solución ideal para empresas que buscan escalar su infraestructura de comunicación.
                 </p>
-                
+
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-telefonia-ip#troncal-sip" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-telefonia-ip#troncal-sip"
+                    roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -341,18 +349,23 @@ const closeBento = () => {
           <div v-else-if="activeCardId === 'proveedor'" class="h-100 d-flex align-items-center">
             <div class="row align-items-center w-100 py-3 py-lg-0">
               <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
-                <img src="/img/recursos/IMAGEN_6_SECCION_8.png" class="img-fluid w-100 modal-main-img" alt="Proveedor">
+                <img src="/img/recursos/IMAGEN_6_SECCION_8.png" class="img-fluid w-100 modal-main-img d-none d-lg-block" alt="Proveedor">
               </div>
               <div class="col-lg-6 col-12">
-                <h2 class="mb-1 fw-semibold text-dark fs-1">Elegir un proveedor de <span class="text-red">Telefonía IP</span></h2>
+                <h2 class="mb-1 fw-semibold text-dark fs-1">Elegir un proveedor de <span class="text-red">Telefonía
+                    IP</span></h2>
                 <p class="parrafo_card text-dark fw-semibold mb-3">
-                  Antes de contratar, verifica la calidad de la infraestructura, soporte técnico, escalabilidad y disponibilidad de la red. 
+                  Antes de contratar, verifica la calidad de la infraestructura, soporte técnico, escalabilidad y
+                  disponibilidad de la red.
                 </p>
-                <p class="parrafo_card text-dark fw-semibold mb-3">Elegir una plataforma confiable garantiza una comunicación estable, crecimiento a largo plazo y una mejor experiencia para tus clientes y colaboradores.</p>
-                
+                <p class="parrafo_card text-dark fw-semibold mb-3">Elegir una plataforma confiable garantiza una
+                  comunicación estable, crecimiento a largo plazo y una mejor experiencia para tus clientes y
+                  colaboradores.</p>
+
                 <!-- Botón de Acción -->
                 <div class="d-flex boton-cellphone justify-content-start">
-                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-telefonia-ip#telefonia-ip" roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  <BaseButton texto="Ver Solución" :mostrarIcono="true" enlace="/soluciones-telefonia-ip#telefonia-ip"
+                    roundedClass="rounded-1 py-2 px-4 fs-6" />
                 </div>
               </div>
             </div>
@@ -360,7 +373,7 @@ const closeBento = () => {
 
         </div>
       </div>
-      
+
     </div>
   </section>
 </template>
@@ -374,8 +387,10 @@ const closeBento = () => {
 /* Tarjetas Bento */
 .bento-trigger {
   border-radius: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.08); /* Borde suave idéntico a la maquetación */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04); /* Sombra suave para que no se vea tan tosco */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  /* Borde suave idéntico a la maquetación */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  /* Sombra suave para que no se vea tan tosco */
   transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.25s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -386,7 +401,8 @@ const closeBento = () => {
 
 /* Contenedor gris del icono de la maquetación */
 .icon-box {
-  background-color: #f3f6f9; /* Fondo gris claro */
+  background-color: #f3f6f9;
+  /* Fondo gris claro */
   border-radius: 12px;
   width: 90px;
   height: 90px;
@@ -394,7 +410,8 @@ const closeBento = () => {
 }
 
 .bento-trigger:hover .icon-box {
-  background-color: #e9ecef; /* Feedback de hover en el cuadro del icono */
+  background-color: #e9ecef;
+  /* Feedback de hover en el cuadro del icono */
 }
 
 
@@ -402,7 +419,7 @@ const closeBento = () => {
   font-size: 0.95rem;
   color: #0d6efd;
   transition: color 0.2s ease;
-  
+
 }
 
 .btn-read-guide:hover {
@@ -521,8 +538,8 @@ const closeBento = () => {
   color: #4a5568;
 }
 
-.text-parrafo{
-    font-size: 1.25rem;
+.text-parrafo {
+  font-size: 1.25rem;
 }
 
 /************** */
@@ -531,18 +548,7 @@ const closeBento = () => {
   background-color: #ffffff;
 }
 
-/* Reglas Responsivas para el Modal */
-@media (max-width: 991.98px) {
-  .bento-content-expanded.active {
-    width: 90% !important;
-    height: 80% !important;
-    padding: 30px;
-  }
-  
-  .modal-main-img {
-    max-height: 220px;
-  }
-}
+
 
 @media (max-width: 575.98px) {
   .bento-content-expanded.active {
@@ -550,39 +556,68 @@ const closeBento = () => {
     height: 90% !important;
     padding: 24px 16px;
   }
-  
+
   .modal-main-img {
     max-height: 160px;
   }
-  
+
   .bento-content-expanded {
     padding: 24px 16px;
   }
-  
+
   .close-btn {
     top: 12px;
     right: 12px;
   }
 
-  .text-parrafo{
+  .text-parrafo {
     font-size: 1rem;
   }
+
+  .parrafo_card {
+    max-width: 500px;
+    font-size: .9rem;
+    line-height: 1.6;
+  }
+
+  .text-feature {
+  font-size: .9rem;
+}
 }
 
-@media (min-width: 768px) and (max-width: 800px){
-  .bento-trigger{
+@media (min-width: 768px) and (max-width: 800px) {
+  .bento-trigger {
     width: 75%;
     margin: 0 auto;
   }
-  .text-parrafo{
+
+  .text-parrafo {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 991px) {
+
+/* Reglas Responsivas para el Modal */
+@media (max-width: 991.98px) {
+  .bento-content-expanded.active {
+    width: 90% !important;
+    height: 73% !important;
+    padding: 30px;
+  }
+
+  .modal-main-img {
+    max-height: 220px;
+  }
+
   .featured-desc {
     font-size: 1rem;
     margin: 0 auto 1.5rem auto;
+  }
+}
+
+@media (min-width:1022px) and (max-width: 1279px) {
+  .text-parrafo {
+    font-size: 1.25rem;
   }
 }
 
@@ -608,17 +643,14 @@ const closeBento = () => {
   }
 }
 
-@media (min-width:1022px) and (max-width: 1279px) {
-  .text-parrafo{
-    font-size: 1.25rem;
-  }
-}
+
 
 @media (min-width: 1280px) and (max-width: 1366px) {
   .featured-desc {
     font-size: .95rem;
   }
-  .text-parrafo{
+
+  .text-parrafo {
     font-size: 1.3rem;
   }
 }

@@ -8,21 +8,21 @@ const originalItems = recursosData.newsletters
 
 
 const items = ref([
-  originalItems[originalItems.length - 3], 
-  originalItems[originalItems.length - 2], 
-  originalItems[originalItems.length - 1], 
-  ...originalItems,                        
-  originalItems[0],                         
-  originalItems[1],                         
-  originalItems[2]                          
+  originalItems[originalItems.length - 3],
+  originalItems[originalItems.length - 2],
+  originalItems[originalItems.length - 1],
+  ...originalItems,
+  originalItems[0],
+  originalItems[1],
+  originalItems[2]
 ])
 
 
 const startIndex = 3
 const currentIndex = ref(startIndex)
-const isTransitioning = ref(false) 
-const isLocked = ref(false) 
-const currentOffset = ref(0) 
+const isTransitioning = ref(false)
+const isLocked = ref(false)
+const currentOffset = ref(0)
 
 const trackRef = ref<HTMLElement | null>(null)
 
@@ -46,22 +46,22 @@ const updateWidths = () => {
     if (cardEl) {
       const cardRect = cardEl.getBoundingClientRect()
       let cardW = cardRect.width
-      
-      
+
+
       if (cardW < 100) {
         const isDesktop = window.innerWidth >= 1280
         const isTablet = window.innerWidth >= 992 && window.innerWidth < 1280
         cardW = isDesktop ? 380 : (isTablet ? 350 : 310)
       }
-      
+
       const computedStyle = window.getComputedStyle(trackRef.value)
       let gap = parseFloat(computedStyle.gap || computedStyle.columnGap || '24')
-      
-      
+
+
       if (isNaN(gap)) {
         gap = 24
       }
-      
+
       const singleWidth = cardW + gap
       currentOffset.value = currentIndex.value * singleWidth
     }
@@ -73,8 +73,8 @@ onMounted(() => {
   nextTick(() => {
     updateWidths()
     window.addEventListener('resize', updateWidths)
-    
-    
+
+
     setTimeout(() => {
       isTransitioning.value = true
     }, 150)
@@ -109,14 +109,14 @@ const handleTransitionEnd = (event: TransitionEvent) => {
     currentIndex.value = startIndex
     updateWidths()
   }
-  
+
   else if (currentIndex.value === startIndex - 1) {
     isTransitioning.value = false
     currentIndex.value = totalItems - 4
     updateWidths()
   }
 
- 
+
   setTimeout(() => {
     isTransitioning.value = true
     isLocked.value = false
@@ -130,6 +130,41 @@ const trackStyle = computed(() => {
     transition: isTransitioning.value ? 'transform 0.4s cubic-bezier(0.25, 1, 0.5, 1)' : 'none'
   }
 })
+// Eventos táctiles para dispositivos móviles (deslizamiento / swipe)
+const touchStartX = ref(0)
+const touchEndX = ref(0)
+
+const handleTouchStart = (event: TouchEvent) => {
+  const touch = event.touches[0]
+  if (touch) {
+    touchStartX.value = touch.clientX
+    touchEndX.value = touch.clientX // inicializar para evitar saltos falsos
+  }
+}
+
+const handleTouchMove = (event: TouchEvent) => {
+  const touch = event.touches[0]
+  if (touch) {
+    touchEndX.value = touch.clientX
+  }
+}
+
+const handleTouchEnd = () => {
+  const swipeDistance = touchStartX.value - touchEndX.value
+  const minSwipeDistance = 50 // Distancia mínima en px para detectar el swipe
+
+  if (swipeDistance > minSwipeDistance) {
+    // Swipe hacia la izquierda -> Siguiente
+    scrollRight()
+  } else if (swipeDistance < -minSwipeDistance) {
+    // Swipe hacia la derecha -> Anterior
+    scrollLeft()
+  }
+
+  // Resetear coordenadas
+  touchStartX.value = 0
+  touchEndX.value = 0
+}
 // SCRIPT DEL CARRUSEL  FIN
 </script>
 
@@ -145,35 +180,28 @@ const trackStyle = computed(() => {
         </p>
       </div>
     </div>
-    
+
     <div class="container">
-     
+
       <div class="carousel-wrapper position-relative px-md-5 px-3 overflow-hidden">
-        
-        
-        <button 
-          @click="scrollLeft" 
+
+
+        <button @click="scrollLeft"
           class="carousel-arrow prev-arrow d-none d-md-flex align-items-center justify-content-center shadow-sm"
-          aria-label="Anterior"
-        >
+          aria-label="Anterior">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
 
-        
-        <div class="carousel-container-outer overflow-hidden w-100">
-          <div 
-            ref="trackRef"
-            class="carousel-track d-flex gap-4 py-3"
-            :style="trackStyle"
-            @transitionend="handleTransitionEnd"
-          >
+
+        <!-- Tira de tarjetas desplazable por CSS con soporte táctil (swipe) -->
+        <div class="carousel-container-outer overflow-hidden w-100" @touchstart="handleTouchStart"
+          @touchmove="handleTouchMove" @touchend="handleTouchEnd">
+          <div ref="trackRef" class="carousel-track d-flex gap-4 py-3" :style="trackStyle"
+            @transitionend="handleTransitionEnd">
             <!-- Elemento del Carrusel -->
-            <div 
-              v-for="(card, index) in items" 
-              :key="index"
-              class="carousel-item-card d-flex justify-content-center"
-            >
-              <div class="newsletter-linkedin-card border rounded-4 shadow-sm p-4 d-flex flex-column justify-content-between text-start w-100">
+            <div v-for="(card, index) in items" :key="index" class="carousel-item-card d-flex justify-content-center">
+              <div
+                class="newsletter-linkedin-card border rounded-4 shadow-sm p-4 d-flex flex-column justify-content-between text-start w-100">
                 <div>
                   <div class="nl-linkedin-header d-flex justify-content-between align-items-center mb-4">
                     <span class="nl-badge fw-semibold">{{ card?.badge }}</span>
@@ -197,7 +225,7 @@ const trackStyle = computed(() => {
                     <span class="nl-dot-live"></span> {{ card?.subscribers }}
                   </div>
                   <a :href="card?.link" target="_blank" class="nl-btn-linkedin d-block text-center">
-                    Ver más 
+                    Ver más
                   </a>
                 </div>
               </div>
@@ -205,12 +233,10 @@ const trackStyle = computed(() => {
           </div>
         </div>
 
-        
-        <button 
-          @click="scrollRight" 
+
+        <button @click="scrollRight"
           class="carousel-arrow next-arrow d-none d-md-flex align-items-center justify-content-center shadow-sm"
-          aria-label="Siguiente"
-        >
+          aria-label="Siguiente">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
 
@@ -242,7 +268,8 @@ const trackStyle = computed(() => {
 
 .carousel-item-card {
   flex: 0 0 auto;
-  width: 310px; /* Móvil por defecto */
+  width: 310px;
+  /* Móvil por defecto */
   box-sizing: border-box;
 }
 
@@ -300,7 +327,8 @@ const trackStyle = computed(() => {
 .nl-linkedin-icon {
   width: 28px;
   height: 28px;
-  fill: #0a66c2; /* Azul oficial de LinkedIn */
+  fill: #0a66c2;
+  /* Azul oficial de LinkedIn */
 }
 
 .nl-linkedin-title {
@@ -326,7 +354,8 @@ const trackStyle = computed(() => {
 .nl-subscriber-count {
   gap: 6px;
   font-size: 0.85rem;
-  color: #057642; /* Verde estilo LinkedIn para comunidad */
+  color: #057642;
+  /* Verde estilo LinkedIn para comunidad */
   font-weight: 600;
 }
 
@@ -357,18 +386,20 @@ const trackStyle = computed(() => {
 
 .nl-btn-linkedin:active {
   transform: scale(0.98);
-} 
+}
 
 /* Media Queries para comportamiento responsivo de la tarjeta */
 @media (min-width: 992px) {
   .carousel-item-card {
-    width: 350px; /* Tablet horizontal / Laptop pequeña */
+    width: 350px;
+    /* Tablet horizontal / Laptop pequeña */
   }
 }
 
 @media (min-width: 1280px) {
   .carousel-item-card {
-    width: 380px; /* Escritorio (exactamente 3 tarjetas en pantalla) */
+    width: 380px;
+    /* Escritorio (exactamente 3 tarjetas en pantalla) */
   }
 }
 
