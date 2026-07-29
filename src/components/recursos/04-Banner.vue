@@ -24,7 +24,8 @@ import BaseButton from '../common/BaseButton.vue';
               </p>
               <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start pt-3">
                 <BaseButton enlace="#" texto="Hablar con un Asesor " :mostrarIcono="true"
-                  roundedClass="rounded-1 py-2 px-4 fs-6" />
+                  roundedClass="rounded-1 py-2 px-4 fs-6" @click.prevent />
+                <!--quitar el click prevent cuando ya tenga el link -->
               </div>
             </div>
 
