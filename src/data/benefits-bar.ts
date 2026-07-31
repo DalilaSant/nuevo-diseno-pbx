@@ -219,3 +219,28 @@ export const benefitsRecursos: BenefitsBarData = {
     },
   ],
 }
+
+export const benefitsNosotros: BenefitsBarData = {
+  benefits:[
+    {
+      icono: 'img/nosotros/ICONO_1_SECCIO_9.png',
+      titulo: 'Soporte \nespecializado.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/nosotros/ICONO_2_SECCIO_9.png',
+      titulo: 'Atención \npersonalizada.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/nosotros/ICONO_3_SECCIO_9.png',
+      titulo: 'Empresa \nmexicana.',
+      subtitulo: '',
+    },
+    {
+      icono: 'img/nosotros/ICONO_4_SECCIO_9.png',
+      titulo: 'Cobertura \ninternacional.',
+      subtitulo: '',
+    },
+  ]
+}

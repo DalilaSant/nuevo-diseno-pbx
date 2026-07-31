@@ -27,6 +27,10 @@ defineProps({
   linePosition: {
     type: String,
     default: 'mx-auto mx-lg-0'
+  },
+  showLine: {
+    type: Boolean,
+    default: true
   }
 })
 </script>
@@ -34,7 +38,7 @@ defineProps({
 <template>
   <div :class="[textPosition, marginBotton]">
     <!-- Línea decorativa roja -->
-    <div :class="['accent-line  mb-3', linePosition]"></div>
+    <div v-if="showLine" :class="['accent-line  mb-3', linePosition]"></div>
     
     <!-- Título -->
     <h2 :class="[textColor, displayFont, lineHeight, 'fw-semibold mb-3']" :style="{ letterSpacing: letterSpacing }">

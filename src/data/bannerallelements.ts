@@ -133,3 +133,15 @@ export const bannerRecursos: BannerAllData = {
     }
   ]
 }
+
+export const bannerNosotros: BannerAllData = {
+  dataBanner: [
+    {
+      image: '/img/nosotros/IMAGEN_2_SECCION_9.png',
+      title: 'Tecnología que   ',
+      titleRed: 'evoluciona contigo.',
+      description: 'PBX Hosting nació con el objetivo de ofrecer soluciones de telefonía IP confiables y accesibles para empresas. Con el tiempo nuestro portafolio incorporo servicios de mensajería, alojamiento web, dominios y herramientas para centros de contacto.\n\nHoy reunimos múltiples soluciones dentro de un mismo ecosistema, permitiendo que nuestros clientes administren su operación desde un solo proveedor.',
+      enlace: '#',
+    },
+  ],
+}

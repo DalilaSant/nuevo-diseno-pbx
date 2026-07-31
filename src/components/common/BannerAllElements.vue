@@ -11,12 +11,17 @@ const props = withDefaults(
     texto?: string;
     animarImagen?: boolean;
     animarTexto?: boolean;
+    subtitulo?:string;
+     mostrarBoton?: boolean; 
+     marginBottonTittle?:string
   }>(),
   {
     reverse: false,
     lineHeight: 'lh-sm',
     marginBottom: 'mb-4',
     texto: 'Cotizar',
+    mostrarBoton: true,
+    marginBottonTittle: 'mb-lg-1'
   }
 )
 
@@ -48,10 +53,15 @@ const props = withDefaults(
       <div :class="['col-lg-6 col-12  text-center text-lg-start order-1 order-lg-2', { 'px-lg-0': !reverse }]">
         <div v-if="animarTexto" v-motion-slide-right :delay="200" :duration="1200" class="text-content-wrapper">
           <!-- Línea decorativa roja -->
-          <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
+           <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-lg-start">
+            <div class="accent-line m-0"></div>
+            <span v-if="subtitulo" class=" fw-semibold fs-6 " style="letter-spacing: 0.05em;">{{ subtitulo }}</span>
+
+           </div>
+          <!-- <div class="accent-line mb-3 mx-auto mx-lg-0"></div> -->
 
           <!-- Título Principal -->
-          <h2 :class="['featured-title fw-semibold mb-3 mb-lg-1 text-dark', lineHeight]">
+          <h2 :class="['featured-title fw-semibold mb-3 text-dark', lineHeight,marginBottonTittle]">
             {{ banner.title }} <br>
             <span class="text-red">{{ banner.titleRed }}</span>
           </h2>
@@ -74,18 +84,23 @@ const props = withDefaults(
           </div>
 
           <!-- Botón de Acción -->
-          <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
-            <BaseButton :texto="texto" :mostrarIcono="true" :enlace="banner.enlace"
+          <div  v-if="mostrarBoton"  class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
+            <BaseButton  :texto="texto" :mostrarIcono="true" :enlace="banner.enlace"
               roundedClass="rounded-1 py-2 px-4 fs-6" />
           </div>
         </div>
 
         <div v-else class="text-content-wrapper">
           <!-- Línea decorativa roja -->
-          <div class="accent-line mb-3 mx-auto mx-lg-0"></div>
+           <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-lg-start">
+            <div class="accent-line m-0"></div>
+            <span v-if="subtitulo" class=" fw-semibold fs-5 " style="letter-spacing: 0.05em;">{{ subtitulo }}</span>
+
+           </div>
+          <!-- <div class="accent-line mb-3 mx-auto mx-lg-0"></div> -->
 
           <!-- Título Principal -->
-          <h2 :class="['featured-title fw-semibold mb-3 mb-lg-1 text-dark', lineHeight]">
+          <h2 :class="['featured-title fw-semibold mb-3 text-dark', lineHeight,marginBottonTittle]">
             {{ banner.title }} <br>
             <span class="text-red">{{ banner.titleRed }}</span>
           </h2>
@@ -108,7 +123,7 @@ const props = withDefaults(
           </div>
 
           <!-- Botón de Acción -->
-          <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
+          <div  v-if="mostrarBoton" class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
             <BaseButton :texto="texto" :mostrarIcono="true" :enlace="banner.enlace"
               roundedClass="rounded-1 py-2 px-4 fs-6" />
           </div>
@@ -159,6 +174,7 @@ const props = withDefaults(
   font-size: 1.15rem;
   line-height: 1.6;
   max-width: 520px;
+  white-space: pre-line;
 }
 
 /* Iconos de check personalizados */

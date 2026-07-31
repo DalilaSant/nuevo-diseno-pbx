@@ -13,7 +13,7 @@ defineProps<{
   <a 
     :href="enlace" 
     :target="esExterno ? '_blank' : '_self'"
-    :class="['btn btn-red btn-lg px-4  fs-6  text-white shadow-sm d-inline-flex align-items-center gap-2 transition-all', roundedClass || 'rounded-3', paddingClass || 'py-2']"
+    :class="['btn btn-red btn-lg px-4 text-white shadow-sm d-inline-flex align-items-center gap-2 transition-all', roundedClass || 'rounded-3', paddingClass || 'py-2',]"
   >
     {{ texto }}
     <!-- Renderiza el icono solo si 'mostrarIcono' es verdadero -->
@@ -26,6 +26,7 @@ defineProps<{
   background-color: #f12537;
   border: none;
   box-shadow: 0 4px 12px rgba(241, 37, 55, 0.2);
+  font-size: 1rem;
 }
 .btn-red:hover {
   background-color: #f12537;
