@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { BannerItem } from '@/interfaces/BannerAllElements'
 import BaseButton from '@/components/common/BaseButton.vue';
+import {computed} from 'vue'
 
 const props = withDefaults(
   defineProps<{
@@ -12,8 +13,10 @@ const props = withDefaults(
     animarImagen?: boolean;
     animarTexto?: boolean;
     subtitulo?:string;
-     mostrarBoton?: boolean; 
-     marginBottonTittle?:string
+    mostrarBoton?: boolean; 
+    marginBottonTittle?:string;
+    direccionAnimacion?: 'left' | 'right';
+    
   }>(),
   {
     reverse: false,
@@ -21,9 +24,31 @@ const props = withDefaults(
     marginBottom: 'mb-4',
     texto: 'Cotizar',
     mostrarBoton: true,
-    marginBottonTittle: 'mb-lg-1'
+    marginBottonTittle: 'mb-lg-1',
+    direccionAnimacion: 'right'
   }
 )
+
+const configuracionMovimiento = computed(()=>{
+  const deslizarDesdeIzquierda = props.direccionAnimacion === 'left'
+
+    return{
+      initial:{
+        x:deslizarDesdeIzquierda ? -100 : 100, //desplazamiento inicial en x
+        opacity: 0
+      },
+      enter: {
+        x: 0,
+        opacity: 1,
+        transition: {
+          delay: 200,
+          duration:1200
+        }
+      }
+    }
+})
+
+
 
 </script>
 <template>
@@ -51,7 +76,7 @@ const props = withDefaults(
 
       <!-- Lado Derecho: Textos y Beneficios -->
       <div :class="['col-lg-6 col-12  text-center text-lg-start order-1 order-lg-2', { 'px-lg-0': !reverse }]">
-        <div v-if="animarTexto" v-motion-slide-right :delay="200" :duration="1200" class="text-content-wrapper">
+        <div v-if="animarTexto" v-motion="configuracionMovimiento" class="text-content-wrapper">
           <!-- Línea decorativa roja -->
            <div class="d-flex align-items-center gap-2 mb-3 justify-content-center justify-content-lg-start">
             <div class="accent-line m-0"></div>

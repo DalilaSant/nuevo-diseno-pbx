@@ -96,16 +96,14 @@ const showVision = ref(false)
 
 /* Contenedor gris del icono de la maquetación */
 .icon-box {
-  background-color: #f3f6f9;
+
   border-radius: 12px;
   width: 90px;
   height: 90px;
   transition: background-color 0.25s ease;
 }
 
-.bento-trigger:hover .icon-box {
-  background-color: #e9ecef;
-}
+
 
 .btn-read-guide {
   font-size: 0.95rem;

@@ -5,7 +5,7 @@ import { bannerNosotros } from '@/data/bannerallelements'
 
 <template>
   <section class="solutions-features-section py-0 pt-lg-5 pb-lg-0">
-    <BannerAllElements :items="bannerNosotros.dataBanner" lineHeight="lh-1"  subtitulo="Nuestra historia"  :mostrarBoton="false" reverse marginBottonTittle="mb-lg-2" />
+    <BannerAllElements :items="bannerNosotros.dataBanner" lineHeight="lh-1"  subtitulo="Nuestra historia"  :mostrarBoton="false" reverse marginBottonTittle="mb-lg-2"  animarTexto direccionAnimacion="left"/>
   </section>
 </template>
 
