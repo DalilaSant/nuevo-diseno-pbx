@@ -37,7 +37,7 @@ const configuracionMovimiento = computed(()=>{
         x:deslizarDesdeIzquierda ? -100 : 100, //desplazamiento inicial en x
         opacity: 0
       },
-      enter: {
+      visibleOnce: {
         x: 0,
         opacity: 1,
         transition: {
