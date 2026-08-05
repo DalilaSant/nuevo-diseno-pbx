@@ -69,6 +69,35 @@ import WhatsAppChatComponent from './WhatsappChatComponent.vue'
             <a href="https://wa.me/+525587894847" class="text-secondary text-decoration-none footer-link">
               WhatsApp 55 8789 4847</a>
           </p>
+          <div class="mt-lg-4 mt-2">
+            <div class="footer-header-box-2 ">
+            <h4 class="h6 text-tittle fw-bold mb-0 pb-2 border-bottom border-light border-opacity-25 w-100">
+              Política de Servicios
+            </h4>
+          </div>
+          <RouterLink to="/politica-de-privacidad" class="text-decoration-none">
+            <p class="small mb-2 text-secondary footer-link">
+            Política de Privacidad
+          </p>
+          </RouterLink>
+          <RouterLink to="/terminos-y-condiciones-generales" class="text-decoration-none">
+            <p class="small mb-2 text-secondary footer-link">
+            Términos y condiciones generales
+          </p>
+          </RouterLink>
+          <RouterLink to="/terminos-y-condiciones-dominios" class="text-decoration-none">
+            <p class="small mb-2 text-secondary footer-link">
+            Términos y Condiciones de los Dominios
+          </p>
+          </RouterLink>
+          <RouterLink to="/terminos-y-condiciones-promocion-dominios-mx" class="text-decoration-none">
+            <p class="small mb-2 text-secondary footer-link">
+            Términos y Condiciones Promoción Dominios .MX
+          </p>
+          </RouterLink>
+          
+          </div>
+          
         </div>
 
         <!-- Columna 3: Legales -->
@@ -149,6 +178,14 @@ import WhatsAppChatComponent from './WhatsappChatComponent.vue'
   /* Alinea la base del texto y del logo */
   margin-bottom: 1.5rem;
   /* Separación uniforme */
+}
+
+
+.footer-header-box-2 {
+  height: 52px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: .6rem;
 }
 
 .text-tittle {

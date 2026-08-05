@@ -69,6 +69,32 @@ export const routes: RouteRecordRaw[] = [
     component: NotFoundView,
     meta: { title: 'PBX Hosting | Página no encontrada' },
   },
+
+  //POLITICAS
+  {
+    path:'/politica-de-privacidad',
+    name: 'politica-de-privacidad',
+    component: ()=> import('@/views/politicas/PoliticaPrivacidad.vue'),
+    meta: { title: 'PBX Hosting | Política de Privacidad'},
+  },
+  {
+    path:'/terminos-y-condiciones-generales',
+    name: 'terminos-y-condiciones-generales',
+    component: ()=> import('@/views/politicas/CondicionesGenerales.vue'),
+    meta: { title: 'PBX Hosting | Términos y Condiciones Generales'},
+  },
+  {
+    path:'/terminos-y-condiciones-dominios',
+    name: 'terminos-y-condiciones-dominios',
+    component: ()=> import('@/views/politicas/CondicionesDominios.vue'),
+    meta: { title: 'PBX Hosting | Términos y Condiciones Dominios'},
+  },
+  {
+    path:'/terminos-y-condiciones-promocion-dominios-mx',
+    name: 'terminos-y-condiciones-promocion-dominios-mx',
+    component: ()=> import('@/views/politicas/CondicionesMXDominios.vue'),
+    meta: { title: 'PBX Hosting | Términos y Condiciones Promoción Dominios .MX'},
+  },
 ]
 
 const router = createRouter({
