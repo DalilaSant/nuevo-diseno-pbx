@@ -28,6 +28,10 @@ defineProps({
     type: String,
     default: 'mx-auto mx-lg-0'
   },
+  marginBottomLine:{
+    type: String,
+    default: 'mb-3'
+  },
   showLine: {
     type: Boolean,
     default: true
@@ -38,7 +42,7 @@ defineProps({
 <template>
   <div :class="[textPosition, marginBotton]">
     <!-- Línea decorativa roja -->
-    <div v-if="showLine" :class="['accent-line  mb-3', linePosition]"></div>
+    <div v-if="showLine" :class="['accent-line', linePosition, marginBottomLine]"></div>
     
     <!-- Título -->
     <h2 :class="[textColor, displayFont, lineHeight, 'fw-semibold mb-3']" :style="{ letterSpacing: letterSpacing }">

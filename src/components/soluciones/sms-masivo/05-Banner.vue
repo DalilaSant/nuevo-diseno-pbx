@@ -37,7 +37,7 @@ import BaseButton from '../../common/BaseButton.vue'
                 Tus mensajes <span class="fw-semibold">se muestran directamente</span>  en la <span class="fw-semibold">pantalla del dispositivo</span>  sin necesidad de abrir la bandeja de entrada.
               </p>
               <div class="d-flex justify-content-center justify-content-lg-end mt-3">
-                <BaseButton texto="Cotizar" enlace="#" />
+                <BaseButton texto="Cotizar" enlace="https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20SMS%20Flash%2C%20por%20favor.%20%F0%9F%93%B2%F0%9F%93%A9" />
               </div>
             </div>
 

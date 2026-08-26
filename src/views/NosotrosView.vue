@@ -28,7 +28,7 @@ onMounted(()=>{
         <Section03/>
         <Section04/>
         <Banner05/>
-        <Section06/>
+        <!-- <Section06/> -->
         <Banner07/>
     </div>
 </template>

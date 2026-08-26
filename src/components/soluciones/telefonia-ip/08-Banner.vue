@@ -103,7 +103,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
 
                 <!-- Botón de acción -->
                 <div class="text-start boton-cellphone mt-2">
-                  <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                  <BaseButton texto="Me interesa" enlace="https://www.pbxhosting.com.mx/billing/cart.php?a=confproduct&i=9" :mostrarIcono="true"
                     roundedClass="rounded-1" />
                 </div>
               </div>

@@ -23,7 +23,7 @@ import SectionTitleTwo from '../common/SectionTitleTwo.vue';
           </p>
 
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <BaseButton texto="Hablar con un asesor" enlace="#" />
+            <BaseButton texto="Hablar con un asesor" enlace="https://api.whatsapp.com/send/?phone=5587894847&text&type=phone_number&app_absent=0" />
           </div>
         </div>
 

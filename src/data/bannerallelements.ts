@@ -16,7 +16,7 @@ export const bannerTelefoniaIP: BannerAllData = {
           text: 'Funciones avanzadas',
         },
       ],
-      enlace: '#',
+      enlace: '/contacto',
     },
   ],
 }
@@ -36,7 +36,7 @@ export const bannerSMSMasivo: BannerAllData = {
           text: 'Amplia cobertura nacional.',
         },
       ],
-      enlace: '#',
+      enlace: 'https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20SMS%20Long%20Code%2C%20por%20favor.%20%F0%9F%93%B2%F0%9F%93%A9',
     },
   ],
 }
@@ -55,7 +55,7 @@ export const bannerSMSMasivoDos: BannerAllData = {
           text: 'Alto rendimiento, grandes volúmenes.',
         },
       ],
-      enlace: '#',
+      enlace: 'https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20SMS%20Short%20Code%2C%20por%20favor.%20%F0%9F%93%B2%F0%9F%93%A9',
     },
   ],
 }
@@ -75,7 +75,7 @@ export const bannerSMSMasivoTres: BannerAllData = {
           text: 'Mayor interacción y reconocimiento.',
         },
       ],
-      enlace: '#',
+      enlace: 'https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20Mensajes%20RCS%2C%20por%20favor.%20%F0%9F%93%B2%F0%9F%93%A9',
     },
   ],
 }
@@ -96,7 +96,7 @@ export const bannerWhatsapp: BannerAllData = {
           text: 'Tus campañas siempre activas.'
         }
       ],
-      enlace: '#',
+      enlace: 'https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20WhatsApp%20Masivo.%20%F0%9F%93%B1',
     }
   ]
 }
@@ -117,7 +117,7 @@ export const bannerAgenteIA: BannerAllData = {
           text: 'Escalabilidad sin personal.',
         },
       ],
-      enlace: '',
+      enlace: 'https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20m%C3%A1s%20informaci%C3%B3n%20de%20su%20Agente%20IA%20%F0%9F%A4%96%2C%20%C2%A1gracias!',
     }
   ]
 }

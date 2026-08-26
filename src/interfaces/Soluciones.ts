@@ -19,6 +19,7 @@ export interface CardsPrecios {
   price: string
   setup: string
   features: string[]
+  link: string
 }
 
 /*Banner 09*/ 
@@ -36,6 +37,7 @@ export interface CardsPreciosDialler{
   description: string
   textred:string
   features:string[]
+  link: string
 }
 
 /*Banner 14*/
@@ -44,6 +46,7 @@ export interface CardsPreciosCallcenter{
  price: string
  features: string[]
  featuredesc: string[]
+ link: string
 }
 
 export interface WhatsappCard{
@@ -65,6 +68,7 @@ export interface CardsPreciosHosting{
   price: string
   setup: string
   features: string[]
+  link: string
 }
 
 export interface CardsPreciosServidores{
@@ -73,6 +77,7 @@ export interface CardsPreciosServidores{
   price: string
   setup: string
   features: string[]
+  link:string
 }
 
 export interface CardsPreciosDedicado{
@@ -81,6 +86,7 @@ export interface CardsPreciosDedicado{
   price:string
   setup: string
   features: string[]
+  link:string
 }
 
 //Interfaz principal que agrupa todo

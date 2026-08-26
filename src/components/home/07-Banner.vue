@@ -30,7 +30,7 @@ import BaseButton from '../common/BaseButton.vue'
                 Telefonía, servidores, y automatización integrados en un ecosistema tecnológico.
               </p>
               <div class="d-flex justify-content-center justify-content-lg-start mt-3">
-                <BaseButton texto="Hablar con un asesor" enlace="#" />
+                <BaseButton texto="Hablar con un asesor" enlace="https://api.whatsapp.com/send/?phone=5587894847&text&type=phone_number&app_absent=0" />
               </div>
             </div>
 

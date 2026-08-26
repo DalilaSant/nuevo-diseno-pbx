@@ -28,7 +28,7 @@ import BaseButton from '@/components/common/BaseButton.vue';
 
             <!-- Botón de Acción -->
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <BaseButton texto="Cotizar" :mostrarIcono="true" enlace="#"
+              <BaseButton texto="Cotizar" :mostrarIcono="true" enlace="https://cirox.mx/"
                 roundedClass="rounded-1 py-2 px-4 fs-6" />
             </div>
           </div>

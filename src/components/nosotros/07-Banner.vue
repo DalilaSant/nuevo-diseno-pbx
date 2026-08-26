@@ -67,7 +67,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <section ref="sectionRef" class="banner-section pt-5 mt-xl-0 mt-0">
+  <section ref="sectionRef" class="banner-section pt-0 mt-xl-0 mt-0">
     <div class="container py-lg-4">
 
       <!-- Contenedor principal con imagen de fondo -->

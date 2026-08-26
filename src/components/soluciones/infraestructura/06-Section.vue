@@ -207,7 +207,7 @@ const trackStyle = computed(() => {
                 <div class="d-flex justify-content-start boton-action mt-auto">
                   <BaseButton 
                     texto="Me interesa" 
-                    enlace="#" 
+                    :enlace="card?.link || ''"
                     :mostrarIcono="true"
                     roundedClass="rounded-1 py-2 px-3 w-100 text-center justify-content-center" 
                   />

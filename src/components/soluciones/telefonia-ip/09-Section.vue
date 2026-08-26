@@ -62,13 +62,13 @@ import { solucionesData } from '@/data/soluciones'
                   </div>
                   <div class="feature-item d-flex align-items-center gap-2 text-start">
                     <i class="fa-regular fa-circle-check check-icon"></i>
-                    <span class="feature-text text-dark fw-semibold">Bolsa de Minutos:<span class="text-secondary">5,000 Min Fijos, 15,0000 Min Telcel y 10,000 Min Otros.</span></span>
+                    <span class="feature-text text-dark fw-semibold">Bolsa de Minutos:<span class="text-secondary">5,000 Min Fijos, 15,000 Min Telcel y 10,000 Min Otros.</span></span>
                   </div>
                 </div>
               </div>
               <!-- Botón de acción -->
                 <div class="text-start boton-cellphone mt-2">
-                  <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                  <BaseButton texto="Me interesa" enlace="https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Me%20interesa%20su%20promoci%C3%B3n%20de%20Paquete%20Cobranza%2C%20me%20podr%C3%ADas%20dar%20m%C3%A1s%20informaci%C3%B3n" :mostrarIcono="true"
                     roundedClass="rounded-1" />
                 </div>
             </div>

@@ -56,7 +56,7 @@ import BaseButton from '@/components/common/BaseButton.vue'
               <span class="text-dark fw-semibold">1 sola licencia</span>
             </div>
             <div class="text-start boton-cellphone mt-2">
-              <BaseButton texto="Solicitar demo" enlace="#" :mostrarIcono="true" roundedClass="rounded-1" paddingClass="py-1" />
+              <BaseButton texto="Solicitar demo" enlace="/contacto" :mostrarIcono="true" roundedClass="rounded-1" paddingClass="py-1" />
             </div>
           </div>
         </div>

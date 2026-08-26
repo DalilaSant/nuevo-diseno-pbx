@@ -64,7 +64,7 @@ import { solucionesData } from '@/data/soluciones'
                             </div>
                             <!-- Botón de acción -->
                             <div class="d-flex justify-content-start boton-action mt-2">
-                                <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                                <BaseButton texto="Me interesa" :enlace="card.link" :mostrarIcono="true"
                                     roundedClass="rounded-1 py-2 px-3 w-100 text-center justify-content-center" />
                             </div>
                         </div>

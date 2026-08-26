@@ -27,7 +27,7 @@ import { benefitsWhatsapp } from '@/data/benefits-bar'
                 Impulsa tus estrategias de marketing.
               </p>
               <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start">
-                <BaseButton texto="Hablar con un Asesor" :mostrarIcono="true" enlace="#"
+                <BaseButton texto="Hablar con un Asesor" :mostrarIcono="true" enlace="https://api.whatsapp.com/send/?phone=5587894847&text&type=phone_number&app_absent=0"
                   roundedClass="rounded-1 py-2 px-4 fs-6" />
               </div>
             </div>

@@ -60,7 +60,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 
                   <!-- Botón abajo a la izquierda -->
                   <div class="text-start boton-cellphone">
-                    <BaseButton class="ms-3" texto="Me interesa" enlace="#" :mostrarIcono="true"
+                    <BaseButton class="ms-3" texto="Me interesa" enlace="https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20L%C3%ADnea%20Telef%C3%B3nica%20de%20M%C3%A9xico%202%20Canales%2C%20por%20favor" :mostrarIcono="true"
                       roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
@@ -95,7 +95,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 
                   <!-- Botón abajo a la izquierda -->
                   <div class="text-start boton-cellphone">
-                    <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                    <BaseButton texto="Me interesa" enlace="https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20L%C3%ADnea%20Telef%C3%B3nica%20de%20M%C3%A9xico%2010%20Canales%2C%20por%20favor" :mostrarIcono="true"
                       roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>
@@ -130,7 +130,7 @@ import SectionTitleTwo from '@/components/common/SectionTitleTwo.vue'
 
                   <!-- Botón abajo a la izquierda -->
                   <div class="text-start boton-cellphone">
-                    <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                    <BaseButton texto="Me interesa" enlace="https://api.whatsapp.com/send?phone=5215587894847&text=%C2%A1Hola!%20Deseo%20informaci%C3%B3n%20sobre%20su%20soluci%C3%B3n%20de%20L%C3%ADnea%20Telef%C3%B3nica%20de%20Estados%20Unidos%202%20Canales%2C%20por%20favor" :mostrarIcono="true"
                       roundedClass="rounded-1 py-2 px-3 fs-6" />
                   </div>
                 </div>

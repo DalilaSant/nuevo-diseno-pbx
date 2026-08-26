@@ -66,7 +66,7 @@ import { solucionesData } from '@/data/soluciones'
 
                         <!-- Botón de acción (Ahora fuera del div superior, alineado al fondo gracias a flex-column y mt-auto) -->
                         <div class="d-flex justify-content-start boton-action mt-auto">
-                            <BaseButton texto="Me interesa" enlace="#" :mostrarIcono="true"
+                            <BaseButton texto="Me interesa" :enlace="card.link" :mostrarIcono="true"
                                 roundedClass="rounded-1 py-2 px-3 w-100 text-center justify-content-center" />
                         </div>
 
