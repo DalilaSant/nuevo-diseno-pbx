@@ -24,7 +24,7 @@ import BaseButton from '../common/BaseButton.vue';
               </p>
               <div class="d-flex boton-cellphone justify-content-center justify-content-lg-start pt-3">
                 <BaseButton enlace="https://api.whatsapp.com/send/?phone=5587894847&text&type=phone_number&app_absent=0" texto="Hablar con un Asesor " :mostrarIcono="true"
-                  roundedClass="rounded-1 py-2 px-4 fs-6" @click.prevent />
+                  roundedClass="rounded-1 py-2 px-4 fs-6"  />
                 <!--quitar el click prevent cuando ya tenga el link -->
               </div>
             </div>
